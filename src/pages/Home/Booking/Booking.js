@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import {  Col, Container, Row } from 'react-bootstrap';
 
 import './Booking.css';
+import OrderPlace from '../OrderPlace/OrderPlace';
 
 const Booking = () => {
     const { productId } = useParams();
@@ -36,10 +37,10 @@ const Booking = () => {
 
                             </Col>
 
-                            {/* <div>
-                            <UserBooking></UserBooking>
-                        </div> */}
-                        </div>
+                            <div>
+                              <OrderPlace></OrderPlace>
+                            </div>
+                    </div>
                     </Row>
                 </Container>
             </div>
