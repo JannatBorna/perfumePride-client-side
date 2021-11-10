@@ -18,6 +18,7 @@ import Dashboard from './pages/Dashboard/Dashboard/Dashboard/Dashboard';
 import Products from './pages/Home/Products/Products';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import PrivateRoute from './pages/Login/Login/PrivateRoute/PrivateRoute';
+import Booking from './pages/Home/Booking/Booking';
 
 
 
@@ -55,6 +56,10 @@ function App() {
             <Route exact path="/reviews">
               <Reviews />
             </Route>
+
+            <PrivateRoute path="/booking/:productId">
+              <Booking />
+            </PrivateRoute>
 
             <PrivateRoute path="/dashboard">
               <Dashboard />

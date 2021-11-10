@@ -1,10 +1,11 @@
 import React from 'react';
 import { Container, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 import './Product.css'
 
 const Product = ({product}) => {
-    const { name, img, description, price } = product;
+    const {_id, name, img, description, price } = product;
     return (
         <div className="product">
             
@@ -15,8 +16,8 @@ const Product = ({product}) => {
                 <small className="description-text">{description?.slice(0, 50)}</small>
                 <h6 className="price-text"><p>{price}</p></h6>
 
-                {/* <Link to={`/booking/${_id}`}><button className="btn btn-secondary  my-2">Booking Now <i className="fas fa-angle-double-right"></i></button> </Link> */}
-                <Button className="butt-color my-2">Buy Now <i className="fas fa-angle-double-right"></i></Button>
+                <Link to={`/booking/${_id}`}><button className="btn btn-secondary  my-2">Buy Now <i className="fas fa-angle-double-right"></i></button> </Link>
+                
             </Container>
 
         </div>
