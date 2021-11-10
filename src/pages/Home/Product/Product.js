@@ -16,7 +16,7 @@ const Product = ({product}) => {
                 <h6 className="price-text"><p>{price}</p></h6>
 
                 {/* <Link to={`/booking/${_id}`}><button className="btn btn-secondary  my-2">Booking Now <i className="fas fa-angle-double-right"></i></button> </Link> */}
-                <Button className="btn-color my-2">Buy Now <i className="fas fa-angle-double-right"></i></Button>
+                <Button className="butt-color my-2">Buy Now <i className="fas fa-angle-double-right"></i></Button>
             </Container>
 
         </div>

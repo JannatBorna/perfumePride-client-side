@@ -1,4 +1,5 @@
 const fakeData = [
+
     {
         id: "1a",
         name: "Nautica",
@@ -79,4 +80,20 @@ const fakeData = [
         price: "$150",
         description: " Bvlgari is a Floral Aquatic fragrance for women. Omnia Crystalline was launched in 2005. The nose behind this fragrance is Alberto Morillas. Top notes are Bamboo and Pear; middle notes are Lotus, Tea and Cassia; base notes are Musk, Guaiac Wood and Oakmoss."
     }
+
+    
+]
+
+
+
+const reviews = 
+[
+        {
+
+            name: "Bvlgari",
+            img: "https://i.ibb.co/D7qdvk0/img-10.png",
+
+            description: " Bvlgari is a Floral Aquatic fragrance for women. Omnia Crystalline was launched in 2005. The nose behind this fragrance is Alberto Morillas. Top notes are Bamboo and Pear; middle notes are Lotus, Tea and Cassia; base notes are Musk, Guaiac Wood and Oakmoss."
+        },
+
 ]

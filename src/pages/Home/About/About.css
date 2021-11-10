@@ -1,0 +1,42 @@
+.card-align{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+   
+}
+
+.product-text{
+    font-size: 16px;
+    color: rgb(233, 45, 45);
+    font-weight: 500;
+}
+
+.inner{
+    overflow: hidden;
+}
+
+.inner img{
+    transition: all 1.5s ease;
+}
+
+.inner:hover img{
+    transform: scale(1.5);
+}
+
+
+
+
+/* make it responsive */
+@media only screen and (max-width: 688px){
+    .card-align{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 991px){
+        .card-align{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}

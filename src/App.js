@@ -13,6 +13,7 @@ import About from './pages/Home/About/About';
 import Banner from './pages/Home/Banner/Banner';
 import Explore from './pages/Home/Explore/Explore';
 import Reviews from './pages/Home/Reviews/Reviews';
+import NotFound from './pages/Home/NotFound/NotFound';
 
 
 
@@ -57,9 +58,14 @@ function App() {
           <Route exact path="/home">
             <Home />
           </Route>
-         </Switch>
+         
+          <Route exact path="*">
+            <NotFound />
+          </Route>
 
-         <Footer />
+
+     </Switch>
+            <Footer />
        </Router>
      </div>
 
