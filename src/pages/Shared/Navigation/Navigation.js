@@ -1,9 +1,13 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar, NavDropdown, NavLink } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
+import useAuth from '../../../hooks/useAuth';
 import './Navigation.css';
 
 const Navigation = () => {
+
+    const { user, logOut} = useAuth();
+
     return (
         <Navbar collapseOnSelect expand="lg" className="header" sticky="top">
             <Container >
@@ -23,17 +27,17 @@ const Navigation = () => {
 
                     <Nav.Link as={HashLink} to="/dashboard#dashboard" className=" header-text">Dashboard</Nav.Link>
 
-                    <Nav.Link as={HashLink} to="/login" className="header-text mx-3">Login
+                    {/* <Nav.Link as={HashLink} to="/login" className="header-text mx-3">Login
                     </Nav.Link>
 
 
                     <Button 
                         className="btn-logout mx-2" variant="secondary">Logout
-                    </Button>
+                    </Button> */}
  
  
  
- {/* 
+
                     {
                         user?.email ?
 
@@ -55,7 +59,7 @@ const Navigation = () => {
 
                             <Nav.Link as={HashLink} to="/login" className="header-text mx-3">Login
                             </Nav.Link>
-                    } */}
+                    } 
 
                 </Navbar.Collapse>
 
