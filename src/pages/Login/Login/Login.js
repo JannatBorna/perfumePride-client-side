@@ -37,7 +37,7 @@ const Login = () => {
     return (
         <Container>
             <Grid container spacing={2}>
-                <Grid item sx={{ mt: 8 }} xs={12} md={6}>
+                <Grid item sx={{ mt: 8 }} xs={12} md={6} className="input-login">
                     <Typography variant="body1" gutterBottom>
                         Login</Typography>
                     <form onSubmit={handleLoginSubmit}>
@@ -59,7 +59,7 @@ const Login = () => {
                             variant="standard" />
 
 
-                        <Button sx={{ width: '75%', m: 1 }} type="submit" variant="contained">Login</Button>
+                        <Button className="login-button" sx={{ width: '75%', m: 1 }} type="submit" variant="contained">Login</Button>
 
                         <NavLink
                             style={{ textDecoration: 'none' }}
@@ -88,7 +88,8 @@ const Login = () => {
                             </Alert>
                         }
                     </form>
-                    <p>-----------------------------------------------</p>
+
+               
                     
 
                 </Grid>

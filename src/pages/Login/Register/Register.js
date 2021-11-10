@@ -81,7 +81,7 @@ const Register = () => {
                                 variant="standard" />
 
 
-                            <Button sx={{ width: '75%', m: 1 }} type="submit" variant="contained">Register</Button>
+                            <Button className="login-button" sx={{ width: '75%', m: 1 }} type="submit" variant="contained">Register</Button>
 
                             <NavLink
                                 style={{ textDecoration: 'none' }}
@@ -89,7 +89,10 @@ const Register = () => {
                                 <Button variant="text">All Ready Register? please login</Button>
                             </NavLink>
 
-                        </form>}
+                        </form>
+                    }
+
+                    
 
                     {/* loading */}
                     {

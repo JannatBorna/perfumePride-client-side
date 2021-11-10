@@ -17,6 +17,7 @@ import NotFound from './pages/Home/NotFound/NotFound';
 import Dashboard from './pages/Dashboard/Dashboard/Dashboard/Dashboard';
 import Products from './pages/Home/Products/Products';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
+import PrivateRoute from './pages/Login/Login/PrivateRoute/PrivateRoute';
 
 
 
@@ -55,9 +56,9 @@ function App() {
               <Reviews />
             </Route>
 
-            <Route path="/dashboard">
+            <PrivateRoute path="/dashboard">
               <Dashboard />
-            </Route>
+            </PrivateRoute>
 
 
             <Route exact path="/login">

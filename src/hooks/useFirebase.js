@@ -86,6 +86,7 @@ useEffect( () => {
         else {
           setUser({})
         }
+        setIsLoading(false);
     });
 
     return () => unsubscribe;
@@ -93,6 +94,7 @@ useEffect( () => {
 
 // signOut 
     const logout = () => {
+        setIsLoading(true);
         signOut(auth)
         .then(() => { })
         
@@ -104,7 +106,8 @@ useEffect( () => {
         authError,
         registerUser,
         loginUser,
-        logout
+        logout,
+        isLoading
 
     }
        
