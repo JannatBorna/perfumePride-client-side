@@ -3,6 +3,7 @@ import {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
     onAuthStateChanged,
+    updateProfile,
     signOut,
 
 } from "firebase/auth";
@@ -18,35 +19,59 @@ const auth = getAuth();
 const useFirebase = () => {
 
         const [user, setUser] = useState({});
-        const [authError, setAuthError] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
+    const [authError, setAuthError] = useState('');
 
 // new user
-    const registerUser = (email, password) => {
+    const registerUser = (email, password, name, history) => {
+        setIsLoading(true);
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 setAuthError('');
+                const newUser = { email, displayName: name };
+                setUser(newUser);
 
-                
-                
-               
+                // save user to the database
+                // saveUser(email, name);
+
+
+
+                updateProfile(auth.currentUser, {
+                    displayName: name
+                })
+                .then(() => {
+
+                }).catch((error) => {
+
+                });
+
+                history.replace('/');
+
             })
             .catch((error) => {
                 setAuthError(error.message);
-               
-            });
+
+            })
+            .finally(() => setIsLoading(false));
 
     }
 
 
+
+
 // login user
-      const loginUser = (email, password) => {
+    const loginUser = (email, password, location, history) => {
+        setIsLoading(true);
           signInWithEmailAndPassword(auth, email, password)
               .then((userCredential) => {
+                  const destination = location?.state?.from || '/';
+                  history.replace(destination);
                   setAuthError('');
               })
               .catch((error) => {
                   setAuthError(error.message);
-              });
+              })
+              .finally(() => setIsLoading(false));
       }
 
 

@@ -6,7 +6,7 @@ import './Navigation.css';
 
 const Navigation = () => {
 
-    const { user, logOut} = useAuth();
+    const { user, logout} = useAuth();
 
     return (
         <Navbar collapseOnSelect expand="lg" className="header" sticky="top">
@@ -49,7 +49,7 @@ const Navigation = () => {
                                 <Nav.Link as={HashLink} to="/addService#addService">Add New Service</Nav.Link>
                                 <NavDropdown.Divider />
 
-                                <Button onClick={logOut}
+                                <Button onClick={logout}
                                     className="btn-logout mx-2" variant="secondary">Logout
                                 </Button>
                             </NavDropdown>
