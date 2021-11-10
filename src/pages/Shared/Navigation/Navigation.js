@@ -42,12 +42,19 @@ const Navigation = () => {
                         user?.email ?
 
                             <NavDropdown className="text" title="Signed in as:" id="basic-nav-dropdown">
-                                <a className="text-danger" href="#login">{user?.displayName}</a>
+                               <div>
+                                    <p className="text-danger mx-4" href="#login">Name- {user?.displayName}</p>
+                                   
+                                    <p className="text-danger mx-4" href="#login">Email- {user?.email}</p>
 
-                                <Nav.Link as={HashLink} to="/myOrder#myOrder">My Order</Nav.Link>
+                               </div>
+
+                               <br />
+
+                                {/* <Nav.Link as={HashLink} to="/myOrder#myOrder">My Order</Nav.Link>
                                 <Nav.Link as={HashLink} to="/manageAllOrder#manageAllOrder">Manage ALL Order</Nav.Link>
                                 <Nav.Link as={HashLink} to="/addService#addService">Add New Service</Nav.Link>
-                                <NavDropdown.Divider />
+                                <NavDropdown.Divider /> */}
 
                                 <Button onClick={logout}
                                     className="btn-logout mx-2" variant="secondary">Logout
