@@ -3,7 +3,13 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-
+.booking-card{
+     /*margin: 10px;
+      padding: 10px; */
+     border: 1px solid rgb(228, 226, 226);
+     height: 360px;
+     border-radius: 7px;
+}
 
 /* responsive */
 @media only screen and (max-width:688px) {

@@ -1,11 +1,9 @@
 import React, { useRef } from 'react';
 import useAuth from '../../../hooks/useAuth';
-import Products from '../Products/Products';
-import './OrderPlace.css'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router';
-
+import './OrderPlace.css'
 
 const OrderPlace = () => {
     const { user } = useAuth();
@@ -55,8 +53,8 @@ const OrderPlace = () => {
 
     return (
         <div>
-            <div className="add-service">
-                <h2>Booking</h2>
+            <div className="add-product">
+                <h2>place Order</h2>
 
                 <form onSubmit={handleUser}>
                     <input type="text" placeholder="Name" ref={nameRef} value={user?.displayName} />
@@ -65,7 +63,7 @@ const OrderPlace = () => {
                     <input type="Phone" placeholder="Phone no." ref={addressRef} />
                     <input type="product name" placeholder="Product Name" ref={serviceRef} value={product.name}/>
                     <input type="price" placeholder="Price" ref={priceRef} value={product.price}/>
-                    <input className="btn btn-secondary" type="submit" value="place Order" />
+                    <input className="btn btn-secondary" type="submit" value="Purchase now" />
                 </form>
 
             </div>
