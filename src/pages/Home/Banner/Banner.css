@@ -1,0 +1,14 @@
+.slide-img{
+    height: 495px;
+}
+
+.text-color{
+    color: rgb(184, 224, 219);
+    font-size: 33px;
+}
+
+.card-text{
+    justify-content: center;
+   text-align: center;
+   align-items: center;
+}
