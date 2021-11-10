@@ -3,7 +3,7 @@ import About from '../About/About';
 import Products from '../Products/Products';
 
 import Banner from './../Banner/Banner';
-import Reviews from './../Reviews/Reviews';
+import Reviews from '../../Dashboard/User/Reviews/Reviews';
 
 const Home = () => {
     return (

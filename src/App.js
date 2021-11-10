@@ -12,8 +12,10 @@ import Footer from './pages/Shared/Footer/Footer';
 import About from './pages/Home/About/About';
 import Banner from './pages/Home/Banner/Banner';
 import Explore from './pages/Home/Explore/Explore';
-import Reviews from './pages/Home/Reviews/Reviews';
+import Reviews from './pages/Dashboard/User/Reviews/Reviews';
 import NotFound from './pages/Home/NotFound/NotFound';
+import Dashboard from './pages/Dashboard/Dashboard/Dashboard/Dashboard';
+import Products from './pages/Home/Products/Products';
 
 
 
@@ -39,6 +41,10 @@ function App() {
             <Banner />
           </Route>
 
+          <Route exact path="/products">
+            <Products />
+          </Route>
+
           <Route exact path="/explore">
             <Explore />
           </Route>
@@ -46,6 +52,11 @@ function App() {
           <Route exact path="/reviews">
             <Reviews />
           </Route>
+
+          <Route path="/dashboard">
+            <Dashboard />
+          </Route>
+          
 
           <Route exact path="/login">
             <Login />
