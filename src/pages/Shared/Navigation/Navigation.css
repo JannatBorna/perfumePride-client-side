@@ -1,0 +1,43 @@
+.header{
+    background-color: rgb(188, 226, 226)!important;
+    height: 60px;
+}    
+
+.header-text{
+    color: rgb(82, 79, 79) !important;
+}
+
+.header-text:hover{
+   background-color: rgb(194, 172, 172) !important;
+   color: rgb(228, 50, 50) !important;
+   border-radius: 4px;
+   height: 35px;
+
+}
+
+.btn-logout{
+    background-color: rgb(230, 223, 224) !important;
+    border-radius: 500px;
+    color: rgb(17, 16, 16) !important;
+    
+}
+.image{
+    width: 35%;
+    margin-right: -200px;
+}
+
+.text{
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.website-name{
+    color: burlywood;
+    font-size: 25px;
+}
+
+.fa-pinterest-p{
+    color: brown;
+    font-size: 40px;
+}
