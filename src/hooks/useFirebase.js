@@ -32,7 +32,7 @@ const useFirebase = () => {
                 setUser(newUser);
 
                 // save user to the database
-                // saveUser(email, name);
+                saveUser(email, name, 'POST');
 
 
 
@@ -99,6 +99,27 @@ useEffect( () => {
         .then(() => { })
         
     }
+
+// user information
+   const saveUser = (email, displayName, method) => {
+       fetch('https://desolate-sea-37549.herokuapp.com/users',{
+           method: method,
+           headers: {
+               'content-type': 'application/json'
+           },
+           body: JSON.stringify(user)
+       })
+       .then()
+   }
+
+
+
+
+
+
+
+
+
 
 
     return {
