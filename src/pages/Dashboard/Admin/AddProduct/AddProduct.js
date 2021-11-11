@@ -1,22 +1,17 @@
 import React, { useRef } from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
-import { useParams } from 'react-router';
-import useAuth from '../../../../hooks/useAuth';
-import './AddProduct.css'
 import { useForm } from 'react-hook-form';
-
+import './AddProduct.css'
 
 
 const AddProduct = () => {
     
-    const { user } = useAuth();
     const { register } = useForm();
-
+    
     const nameRef = useRef();
     const imgRef = useRef();
     const descriptionRef = useRef();
     const priceRef = useRef();
+    
 
 
     const handleUser = e => {
@@ -38,7 +33,7 @@ const AddProduct = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
-                    alert('Successfully!')
+                    alert('Product Add Successfully!')
 
 
                     e.target.reset();
