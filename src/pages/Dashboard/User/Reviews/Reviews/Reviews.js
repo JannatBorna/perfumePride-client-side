@@ -19,7 +19,7 @@ const Reviews = () => {
 
     return (
         <div>
-            <h2 className="text-center fw-3">Reviews <span className="word-color"><i className="fab fa-pinterest-p"></i></span>roducts</h2>
+            <h2 className="text-center fw-3">Reviews</h2>
 
 
             <div className="reviews-container">
@@ -28,10 +28,7 @@ const Reviews = () => {
                     reviews.map(review => <Review
                         key={review.name}
                         review={review}
-                        // setBookingSuccess={setBookingSuccess}
-
-
-
+                     
                     ></Review>)
                 }
 
@@ -41,4 +38,5 @@ const Reviews = () => {
     );
 };
 
-export default Reviews;
+export default Reviews;   
+

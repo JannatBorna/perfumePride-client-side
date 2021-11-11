@@ -64,7 +64,7 @@ const OrderPlace = () => {
                     <input type="Phone" placeholder="Phone no." ref={addressRef} />
                     <input type="product name" placeholder="Product Name" ref={serviceRef} value={product?.name} />
                     <input type="price" placeholder="Price" ref={priceRef} value={product?.price} />
-                    <input className="btn btn-secondary" type="submit" value="Purchase now" />
+                    <input className="btn btn-secondary" type="submit" value="Submit" />
                 </form>
 
 

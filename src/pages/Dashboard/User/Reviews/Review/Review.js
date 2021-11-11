@@ -17,7 +17,8 @@ const Review = ({ review }) => {
             <Container>
                 <Image className="w-25" src={img} roundedCircle />
                 <h4 className="name-text my-2">{name}</h4>
-                <small className="description-text">{description?.slice(0, 50)}</small>
+                <small className="description-text">{description}</small>
+                <br />
                 <Rating
                 className="text-danger"
                     initialRating={rating}
@@ -25,21 +26,14 @@ const Review = ({ review }) => {
                     fullSymbol="fas fa-star icon-color"
                     readonly></Rating>
 
-               
-
-                {/* <OrderPlace
-                    product={product}
-                    // handleBookingClose={handleBookingClose}
-                    // openBooking={openBooking}
-                    // setBookingSuccess={setBookingSuccess}
-
-                ></OrderPlace>
-                 */}
-
-            </Container>
+              </Container>
 
         </div>
     );
 };
 
-export default Review;
+export default Review; 
+
+                
+
+            
