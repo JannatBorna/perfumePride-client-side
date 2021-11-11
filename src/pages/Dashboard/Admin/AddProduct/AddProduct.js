@@ -55,14 +55,14 @@ const AddProduct = () => {
                     <input type="number" {...register(" price")} placeholder="Product Price" ref={priceRef}/>
                     <input className="btn btn-secondary" type="submit" value="Add Now" />
                 </form>
-
-
             </div>
         </div>
     );
 };
 
 export default AddProduct;
+
+            
 
 
                
