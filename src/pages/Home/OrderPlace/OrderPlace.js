@@ -62,8 +62,8 @@ const OrderPlace = () => {
                     <input type="email" placeholder="Email" ref={emailRef} value={user?.email} />
                     <input type="address" placeholder="Your Address" ref={addressRef} />
                     <input type="Phone" placeholder="Phone no." ref={addressRef} />
-                    <input type="product name" placeholder="Product Name" ref={serviceRef} value={product.name} />
-                    <input type="price" placeholder="Price" ref={priceRef} value={product.price} />
+                    <input type="product name" placeholder="Product Name" ref={serviceRef} value={product?.name} />
+                    <input type="price" placeholder="Price" ref={priceRef} value={product?.price} />
                     <input className="btn btn-secondary" type="submit" value="Purchase now" />
                 </form>
 

@@ -29,7 +29,7 @@ import DashboardHome from './../DashboardHome/DashboardHome';
 import MakeAdmin from './../../Admin/MakeAdmin/MakeAdmin';
 import Pay from '../../User/Pay/Pay';
 import MyOrder from '../../User/MyOrder/MyOrder';
-import Reviews from '../../User/Reviews/Reviews';
+// import Reviews from '../../User/Reviews/Reviews';
 
 
 
@@ -66,7 +66,7 @@ function Dashboard(props) {
 
             <Link to={`${url}/myOrder`}><Button color="inherit">My Order</Button></Link>
 
-            <Link to={`${url}/reviews`}><Button color="inherit">Reviews</Button></Link>
+            {/* <Link to={`${url}/reviews`}><Button color="inherit">Reviews</Button></Link> */}
 
             
 
@@ -180,9 +180,9 @@ function Dashboard(props) {
                         <MyOrder></MyOrder>
                     </Route>
 
-                    <Route path={`${path}/reviews`}>
+                    {/* <Route path={`${path}/reviews`}>
                         <Reviews></Reviews>
-                    </Route>
+                    </Route> */}
                 </Switch>
 
 

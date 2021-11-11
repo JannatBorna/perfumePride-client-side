@@ -90,10 +90,25 @@ const reviews =
 [
         {
 
-            name: "Bvlgari",
-            img: "https://i.ibb.co/D7qdvk0/img-10.png",
-
-            description: " Bvlgari is a Floral Aquatic fragrance for women. Omnia Crystalline was launched in 2005. The nose behind this fragrance is Alberto Morillas. Top notes are Bamboo and Pear; middle notes are Lotus, Tea and Cassia; base notes are Musk, Guaiac Wood and Oakmoss."
+        name: "Jannat Borna",
+        img: "https://i.ibb.co/c2Msv7n/R-2.webp",
+        description: "These products are very good. A lot of good products go a long way here, which helps a lot for me. I can buy products very easily. I don't have to go to the store to buy",
+        rating:5
         },
+
+        {
+        name: "Sweet Girl",
+        img: "https://i.ibb.co/C2BGm78/R-1.jpg",
+        description: "These products are very good. A lot of good products go a long way here, which helps a lot for me. I can buy products very easily. I don't have to go to the store to buy",
+        rating: 4
+        },
+
+        {
+        name: "Rose",
+        img: "https://i.ibb.co/XFF9ZpW/R-3.jpg",
+        description: "These products are very good. A lot of good products go a long way here, which helps a lot for me. I can buy products very easily. I don't have to go to the store to buy",
+        rating: 5
+        }
+        
 
 ]

@@ -18,13 +18,7 @@ const Products = () => {
     return (
         <div>
             <h2 className="text-center fw-3">Our <span className="word-color"><i className="fab fa-pinterest-p"></i></span>roducts</h2>
-
-
-            {
-
-                bookingSuccess && <Alert severity="success">Appointment Booked successfully!</Alert>
-
-            }
+ 
 
             <div className="products-container">
 

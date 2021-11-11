@@ -18,7 +18,7 @@ const MyOrder = ({ product }) => {
 
     return (
         <div>
-            <h2>My order: {name}</h2>
+            <h2>My order: </h2>
         </div>
     );
 };
