@@ -40,7 +40,7 @@ function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
     let { path, url } = useRouteMatch();
-    const { admin, user } = useAuth();
+    const { admin, logout } = useAuth();
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
@@ -63,6 +63,8 @@ function Dashboard(props) {
                     <Link to={`${url}/manageAllOrder`}><Button className="dash-button my-3"  color="inherit">Manage All Order</Button></Link>
 
                     <Link to={`${url}/manageProduct`}><Button className="dash-button my-3"  color="inherit">Manage Product</Button></Link>
+
+                    
                 </Box>
             }
 
@@ -74,6 +76,10 @@ function Dashboard(props) {
 
                     <Link to={`${url}/addReview`}><Button className="dash-button my-3"  color="inherit">Add Reviews</Button></Link>
 
+
+                    <Button onClick={logout}
+                        className="btn-logout mx-2" variant="secondary">Logout
+                    </Button>
                 </Box>
             }
             
@@ -116,6 +122,24 @@ function Dashboard(props) {
                     </IconButton>
                     <Typography variant="h6" noWrap component="div">
                         Dashboard
+                    </Typography>    
+                    
+                    <Typography>
+                        {
+                            admin && <Box>
+                                <Button onClick={logout}
+                                    className="btn-logout mx-5" variant="secondary">Logout
+                                </Button>
+                            </Box>
+                        }
+
+                        {
+                            !admin && <Box>
+                                <Button onClick={logout}
+                                    className="btn-logout mx-5" variant="secondary">Logout
+                                </Button>
+                            </Box>
+                        }
                     </Typography>
                 </Toolbar>
             </AppBar>

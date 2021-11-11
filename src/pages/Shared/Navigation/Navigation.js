@@ -1,12 +1,14 @@
+import { Box } from '@mui/system';
 import React from 'react';
 import { Button, Container, Nav, Navbar, NavDropdown, NavLink } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../hooks/useAuth';
 import './Navigation.css';
 
+
 const Navigation = () => {
 
-    const { user, logout} = useAuth();
+    const { user, logout } = useAuth();
 
     return (
         <Navbar collapseOnSelect expand="lg" className="header" sticky="top">
@@ -39,7 +41,7 @@ const Navigation = () => {
  
 
                     {
-                        user?.email ?
+                        user?.email ? 
 
                             <NavDropdown className="text" title="Signed in as:" id="basic-nav-dropdown">
                                <div>
@@ -51,10 +53,7 @@ const Navigation = () => {
 
                                <br />
 
-                                {/* <Nav.Link as={HashLink} to="/myOrder#myOrder">My Order</Nav.Link>
-                                <Nav.Link as={HashLink} to="/manageAllOrder#manageAllOrder">Manage ALL Order</Nav.Link>
-                                <Nav.Link as={HashLink} to="/addService#addService">Add New Service</Nav.Link>
-                                <NavDropdown.Divider /> */}
+                                
 
                                 <Button onClick={logout}
                                     className="btn-logout mx-2" variant="secondary">Logout
@@ -67,6 +66,15 @@ const Navigation = () => {
                             <Nav.Link as={HashLink} to="/login" className="header-text mx-3">Login
                             </Nav.Link>
                     } 
+
+                    
+
+                    
+
+
+
+
+
 
                 </Navbar.Collapse>
 
