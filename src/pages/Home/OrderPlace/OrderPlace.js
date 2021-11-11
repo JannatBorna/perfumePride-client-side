@@ -11,7 +11,7 @@ const OrderPlace = () => {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${productId}`)
+        fetch(`https://desolate-sea-37549.herokuapp.com/products/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     },[])
@@ -31,7 +31,7 @@ const OrderPlace = () => {
 
         const newUser = { name, email, address, service, price };
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://desolate-sea-37549.herokuapp.com/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
