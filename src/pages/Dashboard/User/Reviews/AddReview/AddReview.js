@@ -43,7 +43,7 @@ const AddReview = () => {
     return (
         <div>
             <div className="add-review">
-                <h2>place Order</h2>
+                <h2>place Review</h2>
 
                 <form onSubmit={handleUser}>
                     <input type="text" placeholder="Name" ref={nameRef} value={user?.displayName} />
