@@ -54,7 +54,7 @@ const AddProduct = () => {
 
                 <form onSubmit={handleUser}>
                     <input type="text" placeholder="Product Name" ref={nameRef} />
-                    <input {...register("img")} placeholder="image url" ref={imgRef} value={user?.img} />
+                    <input {...register("img")} placeholder="image url" ref={imgRef} />
                     <textarea {...register("description")} placeholder="description" ref={descriptionRef} />
                     <br />
                     <input type="number" {...register(" price")} placeholder="Product Price" ref={priceRef}/>
