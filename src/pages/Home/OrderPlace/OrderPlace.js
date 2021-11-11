@@ -20,17 +20,17 @@ const OrderPlace = () => {
     const nameRef = useRef();
     const emailRef = useRef();
     const addressRef = useRef();
-    const serviceRef = useRef();
+    const productsRef = useRef();
     const priceRef = useRef();
 
     const handleUser = e => {
         const name = nameRef.current.value;
         const email = emailRef.current.value;
         const address = addressRef.current.value;
-        const service = serviceRef.current.value;
+        const products = productsRef.current.value;
         const price = priceRef.current.value;
 
-        const newUser = { name, email, address, service, price };
+        const newUser = { name, email, address, products, price };
 
         fetch('https://desolate-sea-37549.herokuapp.com/products', {
             method: 'POST',
@@ -62,16 +62,16 @@ const OrderPlace = () => {
                     <input type="email" placeholder="Email" ref={emailRef} value={user?.email} />
                     <input type="address" placeholder="Your Address" ref={addressRef} />
                     <input type="Phone" placeholder="Phone no." ref={addressRef} />
-                    <input type="product name" placeholder="Product Name" ref={serviceRef} value={product?.name} />
+                    <input type="product name" placeholder="Product Name" ref={productsRef} value={product?.name} />
                     <input type="price" placeholder="Price" ref={priceRef} value={product?.price} />
                     <input className="btn btn-secondary" type="submit" value="Submit" />
                 </form>
 
 
 
-              <MyOrder>
+              {/* <MyOrder>
                     product={product}
-              </MyOrder>
+              </MyOrder> */}
 
 
             </div>
