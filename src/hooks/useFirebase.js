@@ -18,8 +18,9 @@ const auth = getAuth();
 
 const useFirebase = () => {
 
-        const [user, setUser] = useState({});
+    const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true);
+    const [admin, setAdmin] = useState(false);
     const [authError, setAuthError] = useState('');
 
 // new user
@@ -114,7 +115,12 @@ useEffect( () => {
    }
 
 
-
+// admin verified
+  useEffect(() => {
+      fetch(`https://desolate-sea-37549.herokuapp.com/users/${user.email}`)
+          .then(res => res.json())
+          .then(data => setAdmin(data.admin))
+  }, [user.email])
 
 
 
@@ -128,6 +134,7 @@ useEffect( () => {
         authError,
         registerUser,
         loginUser,
+        admin,
         logout,
         isLoading
 

@@ -6,12 +6,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -30,13 +24,15 @@ import MakeAdmin from './../../Admin/MakeAdmin/MakeAdmin';
 import Pay from '../../User/Pay/Pay';
 import MyOrder from '../../User/MyOrder/MyOrder';
 import AddReview from '../../User/Reviews/AddReview/AddReview';
-// import Reviews from '../../User/Reviews/Reviews';
+import useAuth from '../../../../hooks/useAuth';
+import './Dashboard.css'
 
 
 
 
 
-const drawerWidth = 150;
+
+const drawerWidth = 190;
 
 
 
@@ -44,6 +40,7 @@ function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
     let { path, url } = useRouteMatch();
+    const { admin, user } = useAuth();
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
@@ -52,31 +49,38 @@ function Dashboard(props) {
         <div>
             <Toolbar />
             <Divider />
-            <Link to="/explore"><Button color="inherit">Explore</Button></Link>
+            <Link to="/explore"><Button className="dash-button my-3" color="inherit">Explore</Button></Link>
             {/* <Link to={`${url}`}><Button color="inherit">Dashboard</Button></Link> */}
 
-            <Link to={`${url}/makeAdmin`}><Button color="inherit">Make Admin</Button></Link>
+            <br />
+
+            {
+                admin && <Box>
+                    <Link to={`${url}/makeAdmin`}><Button className="dash-button my-3"  color="inherit">Make Admin</Button></Link>
+                    
+                    <Link to={`${url}/addProduct`}><Button className="dash-button my-3"  color="inherit">Add Product</Button></Link>
+              
+                    <Link to={`${url}/manageAllOrder`}><Button className="dash-button my-3"  color="inherit">Manage All Order</Button></Link>
+
+                    <Link to={`${url}/manageProduct`}><Button className="dash-button my-3"  color="inherit">Manage Product</Button></Link>
+                </Box>
+            }
+
+            {
+                !admin && <Box>
+                    <Link to={`${url}/pay`}><Button className="dash-button my-3" color="inherit">Pay</Button></Link>
+                    <br />
+                    <Link to={`${url}/myOrder`}><Button className="dash-button my-3"  color="inherit">My Order</Button></Link>
+
+                    <Link to={`${url}/addReview`}><Button className="dash-button my-3"  color="inherit">Add Reviews</Button></Link>
+
+                </Box>
+            }
             
-            <Link to={`${url}/addProduct`}><Button color="inherit">Add Product</Button></Link>
-            
-            <Link to={`${url}/manageAllOrder`}><Button color="inherit">Manage All Order</Button></Link>
-            
-            <Link to={`${url}/manageProduct`}><Button color="inherit">Manage Product</Button></Link>
-
-            <Link to={`${url}/pay`}><Button color="inherit">Pay</Button></Link>
-
-            <Link to={`${url}/myOrder`}><Button color="inherit">My Order</Button></Link>
-
-            <Link to={`${url}/addReview`}><Button color="inherit">Add Reviews</Button></Link>
 
             
 
-            {/* {admin && <Box>
-                <Link to={`${url}/makeAdmin`}><Button color="inherit">Make Admin</Button></Link>
-                <Link to={`${url}/addDoctor`}><Button color="inherit">Add Doctor</Button></Link>
-            </Box>} */}
-
-            <List>
+            {/* <List>
                 {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
                     <ListItem button key={text}>
                         <ListItemIcon>
@@ -85,7 +89,7 @@ function Dashboard(props) {
                         <ListItemText primary={text} />
                     </ListItem>
                 ))}
-            </List>
+            </List> */}
         </div>
     );
     const container = window !== undefined ? () => window().document.body : undefined;
