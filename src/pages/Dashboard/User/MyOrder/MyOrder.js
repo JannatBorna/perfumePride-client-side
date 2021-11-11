@@ -1,16 +1,24 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import useAuth from '../../../../hooks/useAuth';
 
-const MyOrder = () => {
+const MyOrder = ({ product }) => {
     const [myOrder, setMyOrder] = useState({});
+    const { user } = useAuth();
+    
 
-    // useEffect(() => {
-    //     const url = `https://desolate-sea-37549.herokuapp.com/products`
-    // })
+    useEffect(() => {
+        const url = `https://desolate-sea-37549.herokuapp.com/users?email=${user.email}`
+
+        fetch(url)
+        .then(res => res.json())
+        .then(data => setMyOrder(data))
+        
+    },[user.email])
 
     return (
         <div>
-            <h2>this is my order</h2>
+            <h2>My order: {name}</h2>
         </div>
     );
 };

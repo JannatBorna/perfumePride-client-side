@@ -102,6 +102,7 @@ useEffect( () => {
 
 // user information
    const saveUser = (email, displayName, method) => {
+       const user = {email, displayName};
        fetch('https://desolate-sea-37549.herokuapp.com/users',{
            method: method,
            headers: {
