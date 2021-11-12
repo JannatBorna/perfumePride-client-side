@@ -9,15 +9,14 @@
 
 ### Website live link 
      * firebase live link 
-         ()
+         
 
 
 ####  description
-  * my website name is Hotel Tourism.COM. A hotel is an establishment that provides paid lodging on a short-term basis. Hotel rooms are usually numbered to allow guests to identify their room. The hospitality industry is a broad category of fields within the service industry that includes lodging, food and drink service, event planning, theme parks, travel and tourism. It includes hotels, tourism agencies, restaurants and bars..
-
+  * My website name is Perfume Price. This website is Niche website. This website is Perfume related only.The most obvious fact when considering the importance of wearing perfume is the The main purpose of the perfume is to keep unpleasant body odors at bay and make sure you smell fresh throughout the day.
 
   **Many types of icons, picture have been used.** 
-  **React bootstrap, plain bootstrap, plain CSS are used.**
+  **React bootstrap, plain bootstrap, plain CSS are used and also use material ui**
 
   **This website has services are**
         * Hotels Services.
@@ -31,16 +30,28 @@
   **There are more items**
         * Header
         * Home
-        * Services
+        * Products
         * Banner
         * About
-        * Tour Guides
-        * Hotels 
         * Details
         * Login
         * Logout
         * Register
         * Footer
+        * Dashboard
+               **Admin Dashboard**
+                    * Manage All Orders 
+                    * Add A Product 
+                    * Make Admin 
+                    * Manage Products
+                    * Logout
+               **User Dashboard**
+                    * pay 
+                    * My Orders
+                    * Review
+                    * Logout
+        
+        
      
 
 
