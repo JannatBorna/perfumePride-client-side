@@ -1,5 +1,23 @@
+.admin-image{
+display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
 .display-name{
     color: rgb(238, 78, 78);
     font-size: 45px;
     font-weight: 600;
+    
 }
+
+@media only screen and (max-width:688px) {
+    .admin-image{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media only screen and (min-width:689px) and (max-width: 991px) {
+    .admin-image{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

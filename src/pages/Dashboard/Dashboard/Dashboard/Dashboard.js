@@ -35,7 +35,8 @@ import MyOrder from '../../User/MyOrder/MyOrder';
 
 
 
-const drawerWidth = 190;
+const drawerWidth = 185;
+
 
 
 
@@ -100,6 +101,9 @@ function Dashboard(props) {
                 sx={{
                     width: { sm: `calc(100% - ${drawerWidth}px)` },
                     ml: { sm: `${drawerWidth}px` },
+                   backgroundColor: 'cadetblue',
+                   color: 'Black'
+                    
                 }}
             >
                 <Toolbar>
@@ -125,13 +129,7 @@ function Dashboard(props) {
                             </Box>
                         }
 
-                        {/* {
-                            !admin && <Box>
-                                <Button onClick={logout}
-                                    className="btn-logout mx-5" variant="secondary">Logout
-                                </Button>
-                            </Box>
-                        } */}
+                    
                     </Typography>
                 </Toolbar>
             </AppBar>
@@ -140,7 +138,7 @@ function Dashboard(props) {
                 sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
                 aria-label="mailbox folders"
             >
-                {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+              
                 <Drawer
                     container={container}
                     variant="temporary"

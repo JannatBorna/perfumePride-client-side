@@ -9,20 +9,20 @@ import './DashboardHome.css'
 const DashboardHome = () => {
     const {admin, user} = useAuth();
     return (
-        <div>
+        <div className="admin-image">
           
             
             {
                 admin && <Box>
                     <h2 >Welcome to Admin Dashboard ~~ <span className="display-name">{user.displayName}</span></h2>
-                    <img src={admin1} alt="" />
+                    <img className="w-50" src={admin1} alt="" />
                 </Box>
             }
             
             {
                 !admin && <Box>
                     <h2>Welcome to user Dashboard ~~ <span className="display-name">{user.displayName}</span></h2>
-                    <img src={user1} alt="" />
+                    <img className="w-50" src={user1} alt="" />
                 </Box>
             }
 

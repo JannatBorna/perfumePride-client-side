@@ -2,7 +2,9 @@ import React from 'react';
 import { Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../hooks/useAuth';
+import Dashboard from '../../Dashboard/Dashboard/Dashboard/Dashboard';
 import './Navigation.css';
+
 
 
 const Navigation = () => {
@@ -28,14 +30,9 @@ const Navigation = () => {
 
                     <Nav.Link as={HashLink} to="/dashboard#dashboard" className=" header-text">Dashboard</Nav.Link>
 
-                    {/* <Nav.Link as={HashLink} to="/login" className="header-text mx-3">Login
-                    </Nav.Link>
-
-
-                    <Button 
-                        className="btn-logout mx-2" variant="secondary">Logout
-                    </Button> */}
- 
+                    {
+                        <Dashboard></Dashboard> && <Navigation></Navigation>
+                    }
  
  
 
@@ -66,16 +63,7 @@ const Navigation = () => {
                             </Nav.Link>
                     } 
 
-                    
-
-                    
-
-
-
-
-
-
-                </Navbar.Collapse>
+                  </Navbar.Collapse>
 
 
             </Container>
@@ -83,4 +71,13 @@ const Navigation = () => {
     );
 };
 
-export default Navigation;
+export default Navigation;   
+
+                    
+
+
+
+
+
+
+               

@@ -1,6 +1,6 @@
 .header{
     background-color: rgb(144, 236, 201)!important;
-    height: 75px;
+    height: 65px;
 }    
 
 .header-text{
@@ -39,5 +39,51 @@
 
 .fa-pinterest-p{
     color: rgb(228, 15, 15) !important;
-    font-size: 60px;
+    font-size: 50px;
 }
+
+#responsive-navbar-nav{
+    /* background-color: rgb(126, 124, 124); */
+    color: black;
+}
+
+#basic-nav-dropdown{
+    color: black;
+}
+
+
+@media only screen and (max-width:688px) {
+    #responsive-navbar-nav{
+    background-color: rgb(179, 177, 177);
+    color: black;
+}
+  .header-text{
+    color: rgb(0, 0, 0) !important;
+}
+
+.header-text:hover{
+   background-color: rgb(124, 89, 89) !important;
+   color: rgb(0, 0, 0) !important;
+   border-radius: 4px;
+   height: 35px;
+
+}
+  }
+
+  @media only screen and (min-width:689px) and (max-width: 991px) {
+     #responsive-navbar-nav{
+    background-color: rgb(126, 124, 124);
+    color: black;
+   }
+   .header-text{
+    color: rgb(0, 0, 0) !important;
+   }
+
+.header-text:hover{
+   background-color: rgb(124, 89, 89) !important;
+   color: rgb(0, 0, 0) !important;
+   border-radius: 4px;
+   height: 35px;
+
+}
+  }

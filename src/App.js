@@ -22,6 +22,7 @@ import Explores from './pages/Home/Explores/Explores/Explores';
 
 
 
+
 function App() {
   return (
     <div className="App">
@@ -77,6 +78,8 @@ function App() {
             <Route exact path="/home">
               <Home />
             </Route>
+           
+            
 
             <Route exact path="*">
               <NotFound />
