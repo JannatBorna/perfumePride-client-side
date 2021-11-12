@@ -11,7 +11,7 @@ import './About.css'
 const About = () => {
     return (
         <Container className="my-5">
-            <h1 className="text-center fw-3">Our Others <span className="word-color"><i class="fab fa-cuttlefish"></i></span>ollection</h1>
+            <h1 className="text-center fw-3"><span className="word-color"></span>Our Others <i class="fab fa-cuttlefish"></i>ollection</h1>
             <Row lg={1} md={1} xs={1} className="g-4">
                 <div className="card-align my-5">
                     <div className="card w-100 border-0 shadow" >

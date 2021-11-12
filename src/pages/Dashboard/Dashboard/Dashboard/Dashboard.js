@@ -52,8 +52,10 @@ function Dashboard(props) {
         <div>
             <Toolbar />
             <Divider />
-            <Link to="/explores" className="decoration"><Button className="dash-button my-3" color="inherit">Explores</Button></Link>
-           
+            <Link to="/" className="decoration"><Button className="dash-button my-3" color="inherit">Home</Button></Link>
+         <br />
+            
+           <Link to="/explores" className="decoration"><Button className="dash-button my-3" color="inherit">Explores</Button></Link>
 
             <br />
 

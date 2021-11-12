@@ -4,9 +4,11 @@
 }
 
 .word-color{
-    font-size: 40px;
-    color: rgb(177, 61, 61);
+    font-size: 60px;
+    color: rgb(82, 80, 80) !important;
 }
+
+
 
 @media only screen and (max-width:688px) {
     .products-container{

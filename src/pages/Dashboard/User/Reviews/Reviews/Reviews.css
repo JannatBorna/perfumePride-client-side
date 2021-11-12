@@ -8,6 +8,11 @@
     color: rgb(177, 61, 61);
 }
 
+.fa-resolving{
+   color: rgb(228, 15, 15) !important;
+    font-size: 60px;
+}
+
 @media only screen and (max-width:688px) {
     .reviews-container{
       grid-template-columns: repeat(1, 1fr);

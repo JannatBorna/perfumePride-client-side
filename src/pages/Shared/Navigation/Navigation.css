@@ -27,17 +27,17 @@
 }
 
 .text{
-    color:rgb(255, 255, 255);
+    color:rgb(255, 255, 255) !important;
     font-size: 20px;
     font-weight: 500;
 }
 
 .website-name{
-    color: burlywood;
+    color: rgb(255, 145, 0)!important;
     font-size: 25px;
 }
 
 .fa-pinterest-p{
-    color: brown;
-    font-size: 40px;
+    color: rgb(228, 15, 15) !important;
+    font-size: 60px;
 }

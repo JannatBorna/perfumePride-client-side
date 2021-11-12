@@ -24,7 +24,10 @@
 }
 
 
-
+.fa-cuttlefish{
+    color: rgb(228, 15, 15) !important;
+    font-size: 60px;
+}
 
 /* make it responsive */
 @media only screen and (max-width: 688px){

@@ -21,10 +21,10 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-md-5">
                             <div className="left-container text-start">
-                             <span className="website-name"><i className="fab fa-pinterest-p"></i>erfume Pride</span>
+                             <span className="website-name mb-5"><i className="fab fa-pinterest-p"></i>erfume Pride</span>
 
                                 <br />
-                                <div className="icons-container d-flex text-center ">
+                                <div className="icons-container d-flex text-center mt-3">
                                     <div className="icon">
                                         <FontAwesomeIcon icon={faInstagramSquare} />
                                     </div>

@@ -19,7 +19,7 @@ const Reviews = () => {
 
     return (
         <div>
-            <h2 className="text-center fw-3">Reviews</h2>
+            <h2 className="text-center fw-3"><i className="fab fa-resolving"></i>eviews</h2>
 
 
             <div className="reviews-container">
