@@ -1,9 +1,6 @@
-
 import React from 'react';
 import { Container, Image } from 'react-bootstrap';
 import Rating from 'react-rating';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import './Review.css'
 
 

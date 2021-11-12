@@ -2,9 +2,9 @@ import React from 'react';
 import { useParams } from 'react-router';
 import { useState, useEffect } from 'react';
 import {  Col, Container, Row } from 'react-bootstrap';
-
 import './Booking.css';
-import OrderPlace from '../OrderPlace/OrderPlace';
+import OrderPlace from '../OrderPlace/OrderPlace/OrderPlace';
+;
 
 const Booking = () => {
     const { productId } = useParams();

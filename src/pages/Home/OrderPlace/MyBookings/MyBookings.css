@@ -1,0 +1,22 @@
+.reviews-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.word-color{
+    font-size: 40px;
+    color: rgb(177, 61, 61);
+}
+
+@media only screen and (max-width:688px) {
+    .reviews-container{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media only screen and (min-width:689px) and (max-width: 991px) {
+    .reviews-container{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
