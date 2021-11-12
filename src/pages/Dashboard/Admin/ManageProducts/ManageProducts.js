@@ -21,9 +21,9 @@ const ManageProducts = () => {
         })
             .then(res => res.json())
             .then(data => {
-                //console.log(data);
+                
                 if (data.deletedCount) {
-                    alert('Do you really want to delete it?')
+                    alert('Do you really want to remove it?')
                     const remaining = manageProducts.filter(manageProduct => manageProduct._id !== id);
                     setManageProducts(remaining);
                 }
