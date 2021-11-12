@@ -8,7 +8,7 @@ import login from '../../../images/login2.png';
 const Login = () => {
 
     const [loginData, setLoginData] = useState({});
-    const { user, loginUser, authError, isLoading, signInWithGoogle } = useAuth();
+    const { user, loginUser, authError, isLoading} = useAuth();
 
    
     const location = useLocation();
@@ -29,10 +29,6 @@ const Login = () => {
         e.preventDefault();
     }
 
-
-    const handleGoogleSignIn = () => {
-        signInWithGoogle(location, history)
-    }
 
     return (
         <Container>

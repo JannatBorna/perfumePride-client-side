@@ -1,6 +1,5 @@
-import { Box } from '@mui/system';
 import React from 'react';
-import { Button, Container, Nav, Navbar, NavDropdown, NavLink } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../hooks/useAuth';
 import './Navigation.css';
@@ -22,7 +21,7 @@ const Navigation = () => {
                         <Nav.Link as={HashLink} to="/home#home" className=" header-text">Home</Nav.Link>
                         <Nav.Link as={HashLink} to="/about#about" className=" header-text">About</Nav.Link>
                         <Nav.Link as={HashLink} to="/banner#banner" className=" header-text">Banner</Nav.Link>
-                        <Nav.Link as={HashLink} to="/products#products" className=" header-text">Products</Nav.Link>
+                        {/* <Nav.Link as={HashLink} to="/products#products" className=" header-text">Products</Nav.Link> */}
                         <Nav.Link as={HashLink} to="/explores#explores" className=" header-text">Explores</Nav.Link>
                         <Nav.Link as={HashLink} to="/reviews#reviews" className=" header-text">Reviews</Nav.Link>
                     </Nav>

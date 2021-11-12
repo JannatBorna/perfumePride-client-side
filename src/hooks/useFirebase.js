@@ -98,6 +98,7 @@ useEffect( () => {
         setIsLoading(true);
         signOut(auth)
         .then(() => { })
+            .finally(() => setIsLoading(false));
         
     }
 

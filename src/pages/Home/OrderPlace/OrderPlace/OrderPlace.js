@@ -63,10 +63,11 @@ const OrderPlace = () => {
 
 
     return (
-        <div>
-            <div className="add-product">
-                <h2>place Order</h2>
-                    
+        <div> 
+            <h2 className="my-4">place Order</h2>
+            
+               
+            <div className="order-product">        
                 <form onSubmit={handleUser}>
                    
                     <input type="text" placeholder="Name"  value={user?.displayName} />

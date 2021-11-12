@@ -14,16 +14,22 @@ const Booking = () => {
         fetch(`https://desolate-sea-37549.herokuapp.com/products/${productId}`)
         .then(res => res.json())
         .then(data => setProduct(data))
-    },[])
+    }, [])
+
+    // useEffect(() => {
+    //     fetch(`https://desolate-sea-37549.herokuapp.com/homeProducts/${productId}`)
+    //         .then(res => res.json())
+    //         .then(data => setProduct(data))
+    // }, [])
 
 
     return (
           <div className="my-5">
-            <h2 className="my-4">Your Booking <span className="word-color"><i className="fab fa-pinterest-p"></i></span>roduct<span></span> </h2>
-               
+            <h2 className="my-5">Your Booking <span className="word-color"><i className="fab fa-pinterest-p"></i></span>roduct<span></span> </h2>
+             
                 <Container>
                     <Row>
-                        <div className=" booking">
+                    <div className=" booking">
                         <Col className="booking-card ">
                                 <h6><span className="dote-design">Booking Id:</span> {productId}</h6>
                                 <div className=" dote-design">
