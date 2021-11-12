@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { useForm } from "react-hook-form";
 import useAuth from '../../../../../hooks/useAuth';
+import swal from 'sweetalert';
 import './AddReview.css'
 
 const AddReview = () => {
@@ -32,7 +33,9 @@ const AddReview = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
-                    alert('Successfully!')
+                    // alert('!')
+                    swal("Good job!", "Review Successfully!", "success");
+
                     
 
                     e.target.reset();

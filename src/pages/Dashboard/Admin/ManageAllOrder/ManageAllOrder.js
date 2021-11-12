@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
+import swal from 'sweetalert';
 
 
 const ManageAllOrder = () => {
@@ -23,7 +24,23 @@ const ManageAllOrder = () => {
             .then(data => {
 
                 if (data.deletedCount) {
-                    alert('Do you really want to remove it?')
+                    
+                    swal({
+                        title: "Are you sure?",
+                        text: "Once deleted, you will not be able to recover this imaginary file!",
+                        icon: "warning",
+                        buttons: true,
+                        dangerMode: true,
+                    })
+                        .then((willDelete) => {
+                            if (willDelete) {
+                                swal("Poof! Your imaginary file has been deleted!", {
+                                    icon: "success",
+                                });
+                            } else {
+                                swal("Your imaginary file is safe!");
+                            }
+                        });
                     const remaining = manageAllOrders.filter(manageAllOrder => manageAllOrder._id !== id);
                     setManageAllOrders(remaining);
                 }
@@ -31,7 +48,7 @@ const ManageAllOrder = () => {
        }     
  
         const handleUpdate = id => {
-            alert('Update Successfully!!')
+            swal("Good job!", "Update Successfully!", "success");
             const url = `https://desolate-sea-37549.herokuapp.com/orders/${id}`
             fetch(url, {
                 method: 'PUT'
@@ -40,7 +57,7 @@ const ManageAllOrder = () => {
                 .then(data => {
 
                     if (data.updateCount) {
-                        alert('Update Successfully!!')
+                     
                         const remaining = manageAllOrders.filter(manageAllOrder => manageAllOrder._id !== id);
                         setManageAllOrders(remaining);
                     }

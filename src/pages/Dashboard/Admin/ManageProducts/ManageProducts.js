@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import './ManageProducts.css'
+import swal from 'sweetalert';
+
 
 const ManageProducts = () => {
     const [manageProducts, setManageProducts ] = useState([]);
@@ -23,7 +25,21 @@ const ManageProducts = () => {
             .then(data => {
                 
                 if (data.deletedCount) {
-                    alert('Do you really want to remove it?')
+                    // alert('Do you really want to remove it?')
+                    swal({
+                        title: "Are you sure?",
+                        text: "Once deleted, you will not be able to recover this imaginary file!",
+                        icon: "warning",
+                        buttons: true,
+                        dangerMode: true,
+                    })
+                        .then((willDelete) => {
+                            if (willDelete) {
+                                swal("Poof! Your imaginary file has been deleted!", {
+                                    icon: "success",
+                                });
+                            } 
+                        });
                     const remaining = manageProducts.filter(manageProduct => manageProduct._id !== id);
                     setManageProducts(remaining);
                 }

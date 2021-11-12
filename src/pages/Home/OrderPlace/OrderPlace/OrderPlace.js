@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router';
 import { useForm } from "react-hook-form";
+import swal from 'sweetalert';
 import './OrderPlace.css'
 
 
@@ -52,8 +53,9 @@ const OrderPlace = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
-                    alert('Successfully Place Order.')
+                    swal("Good job!", "Order Place Successfully!", "success");
                     e.target.reset();
+                    
                 }
             })
         e.preventDefault();
