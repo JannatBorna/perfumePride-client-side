@@ -52,7 +52,7 @@ function Dashboard(props) {
         <div>
             <Toolbar />
             <Divider />
-            <Link to="/explore"><Button className="dash-button my-3" color="inherit">Explore</Button></Link>
+            <Link to="/explores"><Button className="dash-button my-3" color="inherit">Explores</Button></Link>
            
 
             <br />
