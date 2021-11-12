@@ -52,20 +52,20 @@ function Dashboard(props) {
         <div>
             <Toolbar />
             <Divider />
-            <Link to="/explores"><Button className="dash-button my-3" color="inherit">Explores</Button></Link>
+            <Link to="/explores" className="decoration"><Button className="dash-button my-3" color="inherit">Explores</Button></Link>
            
 
             <br />
 
             {
                 admin && <Box>
-                    <Link to={`${url}/makeAdmin`}><Button className="dash-button my-3"  color="inherit">Make Admin</Button></Link>
+                    <Link to={`${url}/makeAdmin`} className="decoration"><Button className="dash-button my-3"  color="inherit">Make Admin</Button></Link>
                     
-                    <Link to={`${url}/addProduct`}><Button className="dash-button my-3"  color="inherit">Add Product</Button></Link>
+                    <Link to={`${url}/addProduct`} className="decoration"><Button className="dash-button my-3"  color="inherit">Add Product</Button></Link>
               
-                    <Link to={`${url}/manageAllOrder`}><Button className="dash-button my-3"  color="inherit">Manage All Order</Button></Link>
+                    <Link to={`${url}/manageAllOrder`} className="decoration"><Button className="dash-button my-3"  color="inherit">Manage All Order</Button></Link>
 
-                    <Link to={`${url}/manageProduct`}><Button className="dash-button my-3"  color="inherit">Manage Product</Button></Link>
+                    <Link to={`${url}/manageProduct`} className="decoration"><Button className="dash-button my-3"  color="inherit">Manage Product</Button></Link>
 
                     
                 </Box>
@@ -73,11 +73,11 @@ function Dashboard(props) {
 
             {
                 !admin && <Box>
-                    <Link to={`${url}/pay`}><Button className="dash-button my-3" color="inherit">Pay</Button></Link>
+                    <Link to={`${url}/pay`} className="decoration"><Button className="dash-button my-3" color="inherit">Pay</Button></Link>
                     <br />
-                    <Link to={`${url}/myOrder`}><Button className="dash-button my-3"  color="inherit">My Order</Button></Link>
+                    <Link to={`${url}/myOrder`} className="decoration"><Button className="dash-button my-3"  color="inherit">My Order</Button></Link>
 
-                    <Link to={`${url}/addReview`}><Button className="dash-button my-3"  color="inherit">Add Reviews</Button></Link>
+                    <Link to={`${url}/addReview`} className="decoration"><Button className="dash-button my-3"  color="inherit">Add Reviews</Button></Link>
 
 
                     <Button onClick={logout}

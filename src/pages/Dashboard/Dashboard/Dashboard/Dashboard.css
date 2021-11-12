@@ -1,5 +1,9 @@
 .dash-button{
     background-color: rgb(41, 47, 48) !important;
     color: cornsilk !important;
+}    
     
+
+.decoration{
+    text-decoration: none;
 }
