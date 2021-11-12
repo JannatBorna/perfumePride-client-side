@@ -22,8 +22,8 @@ const MakeAdmin = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.modifiedCount) {
-                    // alert('Admin Create Successfully!')
-                    swal("Good job!", "You clicked the button!", "success");
+                    
+                    swal("Good job!", "Admin Create Successfully!", "success");
 
                     setAdminSuccess(true);console.log(data)
                 }
