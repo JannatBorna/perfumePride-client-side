@@ -10,7 +10,7 @@ const DashboardHome = () => {
     const {admin, user} = useAuth();
     return (
         <div>
-            
+          
             
             {
                 admin && <Box>

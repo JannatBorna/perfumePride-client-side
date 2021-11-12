@@ -22,10 +22,13 @@ import ManageProducts from '../../Admin/ManageProducts/ManageProducts';
 import DashboardHome from './../DashboardHome/DashboardHome';
 import MakeAdmin from './../../Admin/MakeAdmin/MakeAdmin';
 import Pay from '../../User/Pay/Pay';
-import MyOrder from '../../User/MyOrder/MyOrder';
+
 import AddReview from '../../User/Reviews/AddReview/AddReview';
 import useAuth from '../../../../hooks/useAuth';
 import './Dashboard.css'
+import MyOrder from '../../User/MyOrder/MyOrder';
+
+
 
 
 
@@ -50,7 +53,7 @@ function Dashboard(props) {
             <Toolbar />
             <Divider />
             <Link to="/explore"><Button className="dash-button my-3" color="inherit">Explore</Button></Link>
-            {/* <Link to={`${url}`}><Button color="inherit">Dashboard</Button></Link> */}
+           
 
             <br />
 
@@ -83,19 +86,6 @@ function Dashboard(props) {
                 </Box>
             }
             
-
-            
-
-            {/* <List>
-                {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>
-                            {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                        </ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
-            </List> */}
         </div>
     );
     const container = window !== undefined ? () => window().document.body : undefined;
@@ -133,13 +123,13 @@ function Dashboard(props) {
                             </Box>
                         }
 
-                        {
+                        {/* {
                             !admin && <Box>
                                 <Button onClick={logout}
                                     className="btn-logout mx-5" variant="secondary">Logout
                                 </Button>
                             </Box>
-                        }
+                        } */}
                     </Typography>
                 </Toolbar>
             </AppBar>

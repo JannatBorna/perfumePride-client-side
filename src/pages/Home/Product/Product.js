@@ -1,8 +1,6 @@
 import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import MyOrder from '../../Dashboard/User/MyOrder/MyOrder';
-import OrderPlace from '../OrderPlace/OrderPlace';
 // import { Link } from 'react-router-dom';
 import './Product.css'
 

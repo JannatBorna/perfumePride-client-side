@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router';
 import './OrderPlace.css'
-import MyOrder from '../../Dashboard/User/MyOrder/MyOrder';
+
 
 const OrderPlace = () => {
     const { user } = useAuth();
@@ -32,7 +32,7 @@ const OrderPlace = () => {
 
         const newUser = { name, email, address, products, price };
 
-        fetch('https://desolate-sea-37549.herokuapp.com/products', {
+        fetch('https://desolate-sea-37549.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -64,14 +64,12 @@ const OrderPlace = () => {
                     <input type="Phone" placeholder="Phone no." ref={addressRef} />
                     <input type="product name" placeholder="Product Name" ref={productsRef} value={product?.name} />
                     <input type="price" placeholder="Price" ref={priceRef} value={product?.price} />
-                    <input className="btn btn-secondary" type="submit" value="Submit" />
+                    <input className="btn btn-secondary" type="submit" value="Order Place" />
                 </form>
 
 
 
-              {/* <MyOrder>
-                    product={product}
-              </MyOrder> */}
+              
 
 
             </div>
