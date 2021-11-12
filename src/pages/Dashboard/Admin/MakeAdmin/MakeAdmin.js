@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Button, TextField, Alert} from '@mui/material';
+import swal from 'sweetalert';
+
 
 const MakeAdmin = () => {
     const [email, setEmail] = useState('');
@@ -20,7 +22,9 @@ const MakeAdmin = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.modifiedCount) {
-                    alert('Admin Create Successfully!')
+                    // alert('Admin Create Successfully!')
+                    swal("Good job!", "You clicked the button!", "success");
+
                     setAdminSuccess(true);console.log(data)
                 }
                 
