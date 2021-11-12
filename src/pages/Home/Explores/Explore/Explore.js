@@ -1,16 +1,14 @@
-import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
-import './Product.css'
+import './Explore.css'
 
-const Product = ({ product}) => {
-    const {_id, name, img, description, price } = product;
-    
 
+const Explore = ({ explore }) => {
+    const { _id, name, img, description, price } = explore;
     return (
-        <div className="product">
-            
+        <div className="explore">
+
 
             <Container>
                 <img className="w-75" src={img} alt="" />
@@ -19,11 +17,11 @@ const Product = ({ product}) => {
                 <h6 className="price-text"><p>{price}</p></h6>
 
                 <Link to={`/booking/${_id}`}><button className="btn btn-secondary  my-2">Buy Now <i className="fas fa-angle-double-right"></i></button> </Link>
-                 
+
             </Container>
 
         </div>
     );
 };
 
-export default Product;
+export default Explore;

@@ -6,10 +6,10 @@ import { Alert } from '@mui/material';
 const Products = () => {
        
     const [products, setProducts] = useState([]);
-    const [bookingSuccess, setBookingSuccess] = useState(false);
+    
 
     useEffect(() => {
-        fetch('https://desolate-sea-37549.herokuapp.com/products')
+        fetch('https://desolate-sea-37549.herokuapp.com/homeProducts')
         .then(res => res.json())
         .then(data => setProducts(data))
     } ,[])
@@ -26,10 +26,8 @@ const Products = () => {
                    products.map(product => <Product
                        key={product.id}
                        product={product}
-                       setBookingSuccess={setBookingSuccess}
-                   
-
-                      
+                       
+                       
                    ></Product>)
                }
 
@@ -39,4 +37,6 @@ const Products = () => {
     );
 };
 
-export default Products;
+export default Products;  
+
+                

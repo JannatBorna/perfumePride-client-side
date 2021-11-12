@@ -11,8 +11,6 @@ import Navigation from './pages/Shared/Navigation/Navigation';
 import Footer from './pages/Shared/Footer/Footer';
 import About from './pages/Home/About/About';
 import Banner from './pages/Home/Banner/Banner';
-import Explore from './pages/Home/Explore/Explore';
-
 import NotFound from './pages/Home/NotFound/NotFound';
 import Dashboard from './pages/Dashboard/Dashboard/Dashboard/Dashboard';
 import Products from './pages/Home/Products/Products';
@@ -20,6 +18,7 @@ import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import PrivateRoute from './pages/Login/Login/PrivateRoute/PrivateRoute';
 import Booking from './pages/Home/Booking/Booking';
 import Reviews from './pages/Dashboard/User/Reviews/Reviews/Reviews';
+import Explores from './pages/Home/Explores/Explores/Explores';
 
 
 
@@ -50,8 +49,8 @@ function App() {
               <Products />
             </Route>
 
-            <Route exact path="/explore">
-              <Explore />
+            <Route exact path="/explores">
+              <Explores />
             </Route>
 
             <Route exact path="/reviews">
