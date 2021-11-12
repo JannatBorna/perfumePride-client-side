@@ -18,7 +18,7 @@ const OrderPlace = () => {
         fetch(`https://desolate-sea-37549.herokuapp.com/products/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data))
-    }, [])
+    }, [productId])
 
     
     const nameRef = useRef();

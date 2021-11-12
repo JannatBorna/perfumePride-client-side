@@ -79,6 +79,7 @@ const MyBookings = () => {
                         key={myBooking.name}
                         myBooking={myBooking}
                         handleDelete={handleDelete}
+                        products={products}
                     >
 
                     </MyBooking>)

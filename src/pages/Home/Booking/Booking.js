@@ -14,13 +14,13 @@ const Booking = () => {
         fetch(`https://desolate-sea-37549.herokuapp.com/products/${productId}`)
         .then(res => res.json())
         .then(data => setProduct(data))
-    }, [])
+    }, [productId])
 
     // useEffect(() => {
     //     fetch(`https://desolate-sea-37549.herokuapp.com/homeProducts/${productId}`)
     //         .then(res => res.json())
     //         .then(data => setProduct(data))
-    // }, [])
+    // }, [productId])
 
 
     return (
