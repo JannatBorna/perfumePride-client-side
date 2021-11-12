@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Image } from 'react-bootstrap';
 import './MyBooking.css';
 
-const MyBooking = ({ myBooking}) => {
+const MyBooking = ({ myBooking, handleDelete }) => {
     const { name, img, description, price } = myBooking;
     
     
@@ -16,7 +16,8 @@ const MyBooking = ({ myBooking}) => {
                     <br />
                     <small className="">Price: {price}</small>
 
-                    
+                <br />
+                    <button className="btn btn-danger my-3" onClick={() => handleDelete(myBooking._id)}>Cancel</button>
 
                 </Container>
 
