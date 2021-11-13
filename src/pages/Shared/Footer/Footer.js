@@ -15,7 +15,7 @@ import {
 
 const Footer = () => {
     return (
-        <div className="footer-responsive">
+        <div className="footer-responsive mt-5">
             <div className="footer-container">
                 <div className="container">
                     <div className="row">
