@@ -3,10 +3,24 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-.word-color{
-    font-size: 40px;
-    color: rgb(177, 61, 61);
+
+.color-hi{
+  color: rgb(0, 0, 0) !important;
+  font-size: 35px;
 }
+
+.color-length{
+  color: rgb(224, 89, 89) !important;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.fa-heading{
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(224, 89, 89) !important;
+}
+
 
 @media only screen and (max-width:688px) {
     .reviews-container{

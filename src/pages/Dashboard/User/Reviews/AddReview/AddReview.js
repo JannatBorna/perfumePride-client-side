@@ -46,7 +46,7 @@ const AddReview = () => {
     return (
         <div>
             <div className="add-review">
-                <h2>place Review</h2>
+                <h2><span className="color-text">place</span> <i className="fab fa-resolving"></i><span className="color-text">eview</span></h2>
 
                 <form onSubmit={handleUser}>
                     <input type="text" placeholder="Name" ref={nameRef} value={user?.displayName} />

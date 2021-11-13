@@ -67,8 +67,9 @@ const MyBookings = () => {
 
  return (
         <div>
-            <h1>Hi .. {user.displayName}</h1>
-            <h2 className="my-4">Your Order: {myBookings.length} items</h2>
+         <h1><span className="color-hi"><i className="fas fa-heading"></i><span className="color-text">ello...</span></span> <span className="color-length">{user.displayName}</span></h1>
+         <br />
+         <h2 className="my-4"><span className="color-text">Your Order: </span><span className="color-length">{myBookings.length}</span> <span className="color-text">items</span></h2>
             <div className="reviews-container">
 
 
