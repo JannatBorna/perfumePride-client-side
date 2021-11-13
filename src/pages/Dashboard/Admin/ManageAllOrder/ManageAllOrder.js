@@ -69,7 +69,7 @@ const ManageAllOrder = () => {
 
     return (
         <div>
-            <h2 className="mb-5">Manage All <span className="text-color later-color">Order</span> </h2>
+            <h2 className="mb-5">Manage A<span className="color-product">LL</span> <span className="text-color later-color">Order</span> </h2>
 
             <Container>
                 <div className="manage-products">

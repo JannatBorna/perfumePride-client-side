@@ -40,7 +40,7 @@ const MyBookings = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.deletedCount) {
-                    // alert('Do you really want to Cancel it?')
+                    
                     swal({
                         title: "Are you sure?",
                         text: "Once deleted, you will not be able to recover this imaginary file!",

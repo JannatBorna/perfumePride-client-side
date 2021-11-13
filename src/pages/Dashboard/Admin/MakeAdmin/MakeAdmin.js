@@ -37,7 +37,7 @@ const MakeAdmin = () => {
 
     return (
         <div>
-            <h2 className="my-4">Make an Admin</h2>
+            <h2 className="my-4">Make <span className="color-product">An</span> Admin</h2>
         
         
         <div className="my-5">    

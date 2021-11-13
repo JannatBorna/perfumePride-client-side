@@ -29,16 +29,7 @@ import './Dashboard.css'
 import MyOrder from '../../User/MyOrder/MyOrder';
 
 
-
-
-
-
-
-
 const drawerWidth = 185;
-
-
-
 
 function Dashboard(props) {
     const { window } = props;
@@ -204,10 +195,7 @@ function Dashboard(props) {
                     </Route>
                 </Switch>
 
-
-
-                
-                
+     
             </Box>
         </Box>
     );
@@ -222,3 +210,6 @@ Dashboard.propTypes = {
 };
 
 export default Dashboard;
+
+                
+           

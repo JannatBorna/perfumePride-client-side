@@ -25,7 +25,7 @@ const ManageProducts = () => {
             .then(data => {
                 
                 if (data.deletedCount) {
-                    // alert('Do you really want to remove it?')
+                    
                     swal({
                         title: "Are you sure?",
                         text: "Once deleted, you will not be able to recover this imaginary file!",
@@ -52,7 +52,7 @@ const ManageProducts = () => {
 
     return (
         <div>
-            <h2 className="mb-5">Manage <span className="text-color later-color">Products</span> </h2>
+            <h2 className="mb-5">Manage <span className="text-color later-color"><span className="color-product">P</span>roducts</span> </h2>
             
      <Container>
                <div className="manage-products">

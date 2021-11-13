@@ -42,14 +42,12 @@
 
 @media only screen and (max-width:688px) {
     .footer-responsive{
-      /* grid-template-columns: repeat(2, 1fr); */
-      width: 100%;
+     width: 100%;
     }
   }
 
   @media only screen and (min-width:689px) and (max-width: 991px) {
     .footer-responsive{
-      /* grid-template-columns: repeat(2, 1fr); */
-      width: 100%;
+     width: 100%;
     }
   }

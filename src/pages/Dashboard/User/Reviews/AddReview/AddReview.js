@@ -33,7 +33,7 @@ const AddReview = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
-                    // alert('!')
+                   
                     swal("Good job!", "Review Successfully!", "success");
 
                     

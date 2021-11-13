@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { useForm } from 'react-hook-form';
+import swal from 'sweetalert';
 import './AddProduct.css'
 
 
@@ -33,7 +34,9 @@ const AddProduct = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
-                    alert('Product Add Successfully!')
+                   
+                    swal("Good job!", "Product Add Successfully!", "success");
+
 
 
                     e.target.reset();
@@ -45,7 +48,7 @@ const AddProduct = () => {
     return (
         <div>
             <div className="add-review">
-                <h2>Add Product</h2>
+                <h2>Add <span className="color-product">P</span>roduct</h2>
 
                 <form onSubmit={handleUser}>
                     <input type="text" placeholder="Product Name" ref={nameRef} />
