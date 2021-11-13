@@ -15,7 +15,7 @@ const Explore = ({ explore }) => {
                 <small className="description-text">{description?.slice(0, 50)}</small>
                 <h6 className="price-text"><p>{price}</p></h6>
 
-                <Link to={`/booking/${_id}`}><button className="btn btn-secondary  my-2">Buy Now <i className="fas fa-angle-double-right"></i></button> </Link>
+                <Link to={`/booking/${_id}`}><button className="btn btn-secondary  mb-5">Buy Now <i className="fas fa-angle-double-right"></i></button> </Link>
 
             </Container>
 
