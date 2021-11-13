@@ -6,7 +6,7 @@ import './Explore.css'
 const Explore = ({ explore }) => {
     const { _id, name, img, description, price } = explore;
     return (
-        <div className="explore">
+        <div className="explore my-5">
 
 
             <Container>
