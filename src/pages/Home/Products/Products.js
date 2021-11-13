@@ -6,12 +6,13 @@ import Product from './../Product/Product';
 const Products = () => {
        
     const [products, setProducts] = useState([]);
+    const [limit, setLimit] = useState(6);
     
 
     useEffect(() => {
-        fetch('https://desolate-sea-37549.herokuapp.com/homeProducts')
+        fetch('https://desolate-sea-37549.herokuapp.com/products')
         .then(res => res.json())
-        .then(data => setProducts(data))
+            .then(data => setProducts(data))
     } ,[])
 
 
@@ -24,10 +25,10 @@ const Products = () => {
             <div className="products-container">
 
                {
-                   products.map(product => <Product
+                    products.slice(0, limit ? limit : products.length).map(product => <Product
                        key={product.id}
                        product={product}
-                       
+                        setLimit={setLimit}
                        
                    ></Product>)
                }

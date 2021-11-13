@@ -16,11 +16,7 @@ const Booking = () => {
         .then(data => setProduct(data))
     }, [productId])
 
-    // useEffect(() => {
-    //     fetch(`https://desolate-sea-37549.herokuapp.com/homeProducts/${productId}`)
-    //         .then(res => res.json())
-    //         .then(data => setProduct(data))
-    // }, [productId])
+    
 
 
     return (

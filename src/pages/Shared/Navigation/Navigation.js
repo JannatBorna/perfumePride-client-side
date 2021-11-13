@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../hooks/useAuth';
-import Dashboard from '../../Dashboard/Dashboard/Dashboard/Dashboard';
+// import Dashboard from '../../Dashboard/Dashboard/Dashboard/Dashboard';
 import './Navigation.css';
 
 
@@ -30,9 +30,9 @@ const Navigation = () => {
 
                     <Nav.Link as={HashLink} to="/dashboard#dashboard" className=" header-text">Dashboard</Nav.Link>
 
-                    {
+                    {/* {
                         <Dashboard></Dashboard> && <Navigation></Navigation>
-                    }
+                    } */}
  
  
 
