@@ -8,7 +8,6 @@ import img5 from '../../../images/collection/colt-5.png';
 import img6 from '../../../images/collection/colt-6.png';
 import './About.css'
 
-// hello
 
 const About = () => {
     return (
