@@ -2,11 +2,10 @@
 
 ## Github  link
     **Client code**
-          https://github.com/programming-hero-web-course-4/niche-website-client-side-JannatBorna  
+         https://github.com/JannatBorna/project-client-side-assignment-12
 
     **Server code** 
-           https://github.com/programming-hero-web-course-4/niche-website-server-side-JannatBorna
-
+           https://github.com/JannatBorna/project-server-side-assignment-12
 ### Website live link 
      * firebase live link *
             https://assignment12-5175d.web.app
