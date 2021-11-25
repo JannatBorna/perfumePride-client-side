@@ -19,12 +19,12 @@
   **React bootstrap, plain bootstrap, plain CSS are used and also use material ui**
 
   **This website has services are**
-        * Hotels Services.
-        * Courier Services.
-        * Resort Services.
-        * Tour Guide Services.
-        * Guest House.
-        * Sports Tourism.
+        * Perfume Services.
+        * Booking Perfume.
+        * Add Reviews.
+        * User Dashboard.
+        * Admin Dashboard.
+        * Admin add Products.
 
 
   **There are more items**
