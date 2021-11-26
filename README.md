@@ -1,4 +1,6 @@
-# Website name  - `Perfume Pride`
+# Website name  - `Perfume Pride` 
+
+# Admin email & password - email: admin@admin.com , password: 123456
 
 ## Github  link
     **Client code**
