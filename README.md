@@ -20,6 +20,8 @@
 * Admin can add, remove and update any product. Admin Dashboard - Manage All
 Orders, Add A Product, Make Admin, Manage Products page that only admins
 can see, not users.
+
+
   **Many types of icons, picture have been used.** 
   **React bootstrap, plain bootstrap, plain CSS are used and also use material ui**
 
