@@ -6,18 +6,36 @@
 .icon {
   margin: 5px;
   padding: 5px;
-  background-color: rgb(46, 46, 46);
+  /* background-color: rgb(46, 46, 46) !important; */
   color: rgb(228, 228, 228);
   font-size: 30px;
 }
+
+.icon_instagram {
+  color: rgb(184, 26, 26) !important;
+}
+
+.icon_twitter {
+  color: rgb(47, 158, 202) !important;
+}
+
+.icon_youtube {
+  color: rgb(247, 11, 11) !important;
+}
+
+.icon_facebook {
+  color: rgb(21, 117, 207) !important;
+}
+
 .icon:hover {
-  background-color: brown !important;
+  color: brown !important;
 }
 .footer-menu {
   list-style: none;
   margin-top: 20px;
   font-size: 16px;
   cursor: pointer;
+  color: black !important;
 }
 .footer-menu:hover {
   color: brown !important;
@@ -29,25 +47,23 @@
   background-color: rgb(226, 226, 226) !important;
 }
 .footer-container {
-  background-color: #191919;
+  background-color: rgb(247, 236, 241) !important;
   padding: 10px;
   color: rgb(252, 243, 243) !important;
-  
 }
 .footer-phone-icon {
   font-size: 30px;
   color: brown !important;
 }
 
-
-@media only screen and (max-width:688px) {
-    .footer-responsive{
-     width: 100%;
-    }
+@media only screen and (max-width: 688px) {
+  .footer-responsive {
+    width: 100%;
   }
+}
 
-  @media only screen and (min-width:689px) and (max-width: 991px) {
-    .footer-responsive{
-     width: 100%;
-    }
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .footer-responsive {
+    width: 100%;
   }
+}

@@ -1,7 +1,5 @@
 import React from 'react';
 import { Card } from "react-bootstrap";
-// import image1 from '../../../images/banner/s-7.jpg'
-// import image2 from '../../../images/banner/s-13.jpg'
 import image3 from '../../../images/banner/b-4.jpg';
 import './Banner.css';
 

@@ -1,10 +1,10 @@
 .header {
-  background-color: rgb(32, 30, 31) !important;
+  background-color: rgb(247, 236, 241) !important;
   height: 85px;
 }
 
 .header-text {
-  color: rgb(245, 240, 240) !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .header-text:hover {
@@ -25,7 +25,7 @@
 }
 
 .text {
-  color: rgb(255, 255, 255) !important;
+  color: rgb(3, 3, 3) !important;
   font-size: 17px;
   font-weight: 500;
 }
@@ -36,7 +36,7 @@
 }
 
 .fa-pinterest-p {
-  color: rgb(233, 230, 230) !important;
+  color: rgb(224, 15, 102) !important;
   font-size: 50px;
 }
 
@@ -45,7 +45,7 @@
 }
 
 #basic-nav-dropdown {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 @media only screen and (max-width: 688px) {

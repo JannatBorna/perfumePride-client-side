@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './Products.css'
 import Product from './../Product/Product';
+import './Products.css';
 
 
 const Products = () => {
@@ -17,7 +17,7 @@ const Products = () => {
 
 
     return (
-        <div>
+        <div className='my-5'>
             
             <h2 className="text-center fw-3"><span className="word-color">Our <i className="fab fa-pinterest-p"></i></span>roducts</h2>
  
