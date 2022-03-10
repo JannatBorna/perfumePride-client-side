@@ -1,89 +1,83 @@
-.header{
-    background-color: rgb(144, 236, 201)!important;
-    height: 65px;
-}    
-
-.header-text{
-    color: rgb(82, 79, 79) !important;
+.header {
+  background-color: rgb(32, 30, 31) !important;
+  height: 85px;
 }
 
-.header-text:hover{
-   background-color: rgb(194, 172, 172) !important;
-   color: rgb(228, 50, 50) !important;
-   border-radius: 4px;
-   height: 35px;
-
+.header-text {
+  color: rgb(245, 240, 240) !important;
 }
 
-.btn-logout{
-    background-color: rgb(230, 223, 224) !important;
-    border-radius: 500px;
-    color: rgb(17, 16, 16) !important;
-    
-}
-.image{
-    width: 35%;
-    margin-right: -200px;
+.header-text:hover {
+  background-color: rgb(255, 253, 253) !important;
+  color: rgb(228, 50, 50) !important;
+  border-radius: 4px;
+  height: 35px;
 }
 
-.text{
-    color:rgb(255, 255, 255) !important;
-    font-size: 20px;
-    font-weight: 500;
+.btn-logout {
+  background-color: rgb(230, 223, 224) !important;
+  border-radius: 500px;
+  color: rgb(17, 16, 16) !important;
+}
+.image {
+  width: 35%;
+  margin-right: -200px;
 }
 
-.website-name{
-    color: rgb(255, 145, 0)!important;
-    font-size: 25px;
+.text {
+  color: rgb(255, 255, 255) !important;
+  font-size: 17px;
+  font-weight: 500;
 }
 
-.fa-pinterest-p{
-    color: rgb(228, 15, 15) !important;
-    font-size: 50px;
+.website-name {
+  color: rgb(231, 146, 175) !important;
+  font-size: 25px;
 }
 
-#responsive-navbar-nav{
-    /* background-color: rgb(126, 124, 124); */
-    color: black;
+.fa-pinterest-p {
+  color: rgb(233, 230, 230) !important;
+  font-size: 50px;
 }
 
-#basic-nav-dropdown{
-    color: black;
+#responsive-navbar-nav {
+  color: black;
 }
 
+#basic-nav-dropdown {
+  color: rgb(255, 255, 255);
+}
 
-@media only screen and (max-width:688px) {
-    #responsive-navbar-nav{
+@media only screen and (max-width: 688px) {
+  #responsive-navbar-nav {
     background-color: rgb(179, 177, 177);
     color: black;
-}
-  .header-text{
+  }
+  .header-text {
     color: rgb(0, 0, 0) !important;
-}
-
-.header-text:hover{
-   background-color: rgb(124, 89, 89) !important;
-   color: rgb(0, 0, 0) !important;
-   border-radius: 4px;
-   height: 35px;
-
-}
   }
 
-  @media only screen and (min-width:689px) and (max-width: 991px) {
-     #responsive-navbar-nav{
+  .header-text:hover {
+    background-color: rgb(124, 89, 89) !important;
+    color: rgb(0, 0, 0) !important;
+    border-radius: 4px;
+    height: 35px;
+  }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  #responsive-navbar-nav {
     background-color: rgb(126, 124, 124);
     color: black;
-   }
-   .header-text{
-    color: rgb(0, 0, 0) !important;
-   }
-
-.header-text:hover{
-   background-color: rgb(124, 89, 89) !important;
-   color: rgb(0, 0, 0) !important;
-   border-radius: 4px;
-   height: 35px;
-
-}
   }
+  .header-text {
+    color: rgb(0, 0, 0) !important;
+  }
+
+  .header-text:hover {
+    background-color: rgb(124, 89, 89) !important;
+    color: rgb(0, 0, 0) !important;
+    border-radius: 4px;
+    height: 35px;
+  }
+}

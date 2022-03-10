@@ -21,10 +21,10 @@ const Navigation = () => {
                 <Navbar.Collapse id="responsive-navbar-nav" >
                     <Nav className="me-auto my-3">
                         <Nav.Link as={HashLink} to="/home#home" className=" header-text">Home</Nav.Link>
-                        <Nav.Link as={HashLink} to="/banner#banner" className=" header-text">Banner</Nav.Link>
+                        {/* <Nav.Link as={HashLink} to="/banner#banner" className=" header-text">Banner</Nav.Link> */}
                         <Nav.Link as={HashLink} to="/about#about" className=" header-text">About</Nav.Link>
                         <Nav.Link as={HashLink} to="/explores#explores" className=" header-text">Explores</Nav.Link>
-                        <Nav.Link as={HashLink} to="/reviews#reviews" className=" header-text">Reviews</Nav.Link>
+                        {/* <Nav.Link as={HashLink} to="/reviews#reviews" className=" header-text">Reviews</Nav.Link> */}
                     </Nav>
 
                     <Nav.Link as={HashLink} to="/dashboard#dashboard" className=" header-text">Dashboard</Nav.Link>

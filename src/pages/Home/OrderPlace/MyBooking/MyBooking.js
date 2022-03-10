@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './MyBooking.css';
 
 const MyBooking = ({ myBooking, handleDelete }) => {
@@ -18,6 +19,14 @@ const MyBooking = ({ myBooking, handleDelete }) => {
 
                 <br />
                     <button className="btn btn-danger my-3" onClick={() => handleDelete(myBooking._id)}>Cancel</button>
+
+                {/* {
+                    payment ? <button className="btn btn-danger my-3">Paid</button>
+                    :
+
+                        <Link to=""><button className="btn btn-danger my-3">Pay</button></Link>
+
+                } */}
 
                 </Container>
 
