@@ -1,21 +1,23 @@
 import React from 'react';
 import Reviews from '../../Dashboard/User/Reviews/Reviews/Reviews';
 import About from '../About/About';
+import Others from '../Others/Others';
 import Products from '../Products/Products';
-
 import Banner from './../Banner/Banner';
+import './Home.css';
 
 
 const Home = () => {
     return (
-        <div>
-            <Banner></Banner>
-            <Products></Products>
-            <About></About>
-            <Reviews></Reviews>
-            
-          
+      <div>
+        <Banner></Banner>
+        <div className="products_section">
+          <Products></Products>
         </div>
+        <Others></Others>
+        <About></About>
+        <Reviews></Reviews>
+      </div>
     );
 };
 

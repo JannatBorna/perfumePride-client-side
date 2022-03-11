@@ -1,13 +1,28 @@
 .card-align {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 20px;
 }
 
 .product-text {
   font-size: 16px;
   color: rgb(233, 45, 45);
   font-weight: 500;
+}
+
+/* .all_text {
+  border-bottom: 3px solid rgb(224, 15, 102) !important;
+} */
+
+.word-color {
+  font-size: 30px;
+  color: rgb(82, 80, 80) !important;
+  font-family: monospace;
+  border-bottom: 3px solid rgb(224, 15, 102) !important;
+}
+
+.card {
+  height: 250px;
 }
 
 .inner {
@@ -24,7 +39,7 @@
 
 .fa-cuttlefish {
   color: rgb(224, 15, 102) !important;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 /* make it responsive */

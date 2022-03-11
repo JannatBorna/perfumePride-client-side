@@ -17,25 +17,24 @@ const Products = () => {
 
 
     return (
-        <div className='my-5'>
-            
-            <h2 className="text-center fw-3"><span className="word-color">Our <i className="fab fa-pinterest-p"></i></span>roducts</h2>
- 
+      <div>
+        <h2 className="text-center fw-3 products_header">
+          <span className="word-color">
+            Our <i className="fab fa-pinterest-p"></i>
+          </span>
+          <span className="word-color">roducts</span>
+        </h2>
 
-            <div className="products-container">
-
-               {
-                    products.slice(0, limit ? limit : products.length).map(product => <Product
-                       key={product.id}
-                       product={product}
-                        setLimit={setLimit}
-                       
-                   ></Product>)
-               }
-
-
-            </div>
+        <div className="products-container">
+          {products.slice(0, limit ? limit : products.length).map((product) => (
+            <Product
+              key={product.id}
+              product={product}
+              setLimit={setLimit}
+            ></Product>
+          ))}
         </div>
+      </div>
     );
 };
 
