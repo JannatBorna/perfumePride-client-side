@@ -1,0 +1,32 @@
+.blogs_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-gap: 10px; */
+}
+
+.text_header {
+  font-size: 30px;
+  color: rgb(82, 80, 80) !important;
+  font-family: monospace;
+}
+
+.word_color {
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(224, 15, 102) !important;
+}
+
+.blog_one {
+  width: 90%;
+  height: 500px;
+}
+
+.blog_two {
+  width: 90%;
+  height: 440px;
+}
+
+.blog_three {
+  width: 90%;
+  height: 350px;
+}

@@ -12,11 +12,10 @@ const Others = () => {
     return (
       <div>
         <Container className="my-5">
-          <h1 className="text-center fw-3">
-            <span className="word-color">Others</span>
-            <i className="fab fa-cuttlefish"></i>
-            <span className="word-color">ollection</span>
+          <h1 className="text-center fw-3 text_header">
+            OTHERS <span className="word_color">C</span>OLLECTION
           </h1>
+
           <Row lg={1} md={1} xs={1} className="g-4">
             <div className="card-align my-5">
               <div className="card border-0 shadow">

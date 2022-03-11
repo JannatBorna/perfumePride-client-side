@@ -18,11 +18,8 @@ const Products = () => {
 
     return (
       <div>
-        <h2 className="text-center fw-3 products_header">
-          <span className="word-color">
-            Our <i className="fab fa-pinterest-p"></i>
-          </span>
-          <span className="word-color">roducts</span>
+        <h2 className="text-center fw-3 text_header">
+          OUR <span className="word_color">P</span>RODUCTS
         </h2>
 
         <div className="products-container">
