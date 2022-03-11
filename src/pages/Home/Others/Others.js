@@ -13,7 +13,7 @@ const Others = () => {
       <div>
         <Container className="my-5">
           <h1 className="text-center fw-3">
-            <span className="word-color">Others</span>{" "}
+            <span className="word-color">Others</span>
             <i className="fab fa-cuttlefish"></i>
             <span className="word-color">ollection</span>
           </h1>
@@ -40,7 +40,7 @@ const Others = () => {
                 <div className="card-body">
                   <div className="card-title text-center">
                     <h4 className="product-text">
-                      <i className="fas fa-window-minimize"></i>Instant Crush{" "}
+                      <i className="fas fa-window-minimize"></i>Instant Crush
                       <i className="fas fa-window-minimize"></i>
                     </h4>
                   </div>

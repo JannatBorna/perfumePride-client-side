@@ -10,15 +10,11 @@
   font-weight: 500;
 }
 
-/* .all_text {
-  border-bottom: 3px solid rgb(224, 15, 102) !important;
-} */
-
 .word-color {
   font-size: 30px;
   color: rgb(82, 80, 80) !important;
   font-family: monospace;
-  border-bottom: 3px solid rgb(224, 15, 102) !important;
+  /* border-bottom: 3px solid rgb(224, 15, 102) !important; */
 }
 
 .card {
