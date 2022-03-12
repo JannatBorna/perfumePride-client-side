@@ -1,11 +1,11 @@
 import {
-    faFacebookSquare,
-    faInstagramSquare,
-    faTwitterSquare,
-    faYoutube
+  faFacebookSquare,
+  faInstagramSquare,
+  faTwitterSquare,
+  faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 import {
-    faMapMarkedAlt, faPhoneVolume
+  faMapMarkedAlt, faPhoneVolume
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from 'react';
@@ -15,6 +15,15 @@ import "./Footer.css";
 const Footer = () => {
     return (
       <div className="footer-responsive mt-5">
+        <hr
+          style={{
+            color: "#656869",
+            backgroundColor: "#656869",
+            height: 1,
+            borderColor: "#656869",
+          }}
+        />
+
         <div className="footer-container">
           <div className="container">
             <div className="row">
@@ -39,7 +48,7 @@ const Footer = () => {
                       <FontAwesomeIcon icon={faFacebookSquare} />
                     </div>
                   </div>
-                  <p className="mt-4 text-dark">
+                  <p className="mt-4 text-white">
                     <small>
                       Perfume can play an important role in our wardrobe.
                       Whether you prefer to apply your signature scent for a
@@ -50,7 +59,7 @@ const Footer = () => {
                     </small>
                   </p>
 
-                  <p className="mt-5 text-dark">
+                  <p className="mt-5 text-white">
                     <small>Perfume_Pride © All rights </small>
                   </p>
                 </div>
@@ -67,7 +76,7 @@ const Footer = () => {
               </div>
               <div className="col-md-5">
                 <div className="right-footer-container">
-                  <h3 className="text-dark">Sign up</h3>
+                  <h3 className="text-white">Sign up</h3>
                   <input
                     className="footer-input"
                     type="text"
@@ -78,7 +87,7 @@ const Footer = () => {
                       <FontAwesomeIcon icon={faPhoneVolume} />
                     </div>
                     <div>
-                      <h5 className="text-dark">+0 1 7 777 000 22</h5>
+                      <h5 className="text-white">+0 1 7 777 000 22</h5>
                     </div>
                   </div>
                   <div className="map d-flex align-items-center justify-content-center">
@@ -86,9 +95,11 @@ const Footer = () => {
                       <FontAwesomeIcon icon={faMapMarkedAlt} />
                     </div>
                     <div>
-                      <p className="text-dark">www.Perfume_Pride.COM.com</p>
+                      <p className="text-white">www.Perfume_Pride.COM.com</p>
 
-                      <p className="text-dark mx-2">Perfume_Pride.COM@pride.com</p>
+                      <p className="text-white mx-2">
+                        Perfume_Pride.COM@pride.com
+                      </p>
                     </div>
                   </div>
                 </div>
