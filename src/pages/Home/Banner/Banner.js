@@ -25,6 +25,7 @@ const Banner = () => {
             </Card.ImgOverlay>
           </Card>
         </div>
+
       </div>
     );
 };
