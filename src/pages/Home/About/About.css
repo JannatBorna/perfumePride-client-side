@@ -1,41 +1,50 @@
-.card-align {
+.about_section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-gap: 10px; */
 }
 
-.product-text {
-  font-size: 16px;
-  color: rgb(233, 45, 45);
-  font-weight: 500;
+.about_button {
+  background-color: rgb(224, 15, 102) !important;
+  border: 1px solid rgb(224, 15, 102) !important;
+  color: white !important;
+  height: 36px;
+  border-radius: 50px;
 }
 
-.inner {
-  overflow: hidden;
+.shop_history {
+  color: black !important;
 }
 
-.inner img {
-  transition: all 1.5s ease;
+.about_icon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
 }
 
-.inner:hover img {
-  transform: scale(1.5);
+.icon_part {
+  border-bottom: 1px solid black;
+
+  width: 450px;
 }
 
-.fa-cuttlefish {
-  color: rgb(224, 15, 102) !important;
-  font-size: 60px;
+.icon_two {
+  margin-left: 370px;
+}
+
+.icon_four {
+  margin-left: 370px;
 }
 
 /* make it responsive */
 @media only screen and (max-width: 688px) {
-  .card-align {
+  .about_section {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media only screen and (min-width: 689px) and (max-width: 991px) {
-  .card-align {
+  .about_section {
     grid-template-columns: repeat(2, 1fr);
   }
 }

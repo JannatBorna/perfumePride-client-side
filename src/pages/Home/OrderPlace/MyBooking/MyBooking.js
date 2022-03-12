@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Image } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import './MyBooking.css';
 
 const MyBooking = ({ myBooking, handleDelete }) => {

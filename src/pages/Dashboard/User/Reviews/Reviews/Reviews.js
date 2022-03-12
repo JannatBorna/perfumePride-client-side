@@ -1,8 +1,6 @@
-import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Review from './../Review/Review';
-import './Reviews.css'
+import './Reviews.css';
 
 const Reviews = () => {
     const [reviews, setReviews] = useState([])
@@ -18,23 +16,17 @@ const Reviews = () => {
 
 
     return (
-        <div>
-            <h2 className="text-center fw-3"><i className="fab fa-resolving"></i>eviews</h2>
+      <div>
+        <h2 className="text-center fw-3 text_header">
+          <span className="word_color">R</span>EVIEWS
+        </h2>
 
-
-            <div className="reviews-container">
-
-                {
-                    reviews.map(review => <Review
-                        key={review.name}
-                        review={review}
-                     
-                    ></Review>)
-                }
-
-
-            </div>
+        <div className="reviews-container">
+          {reviews.map((review) => (
+            <Review key={review.name} review={review}></Review>
+          ))}
         </div>
+      </div>
     );
 };
 
