@@ -1,40 +1,4 @@
-.about_section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* grid-gap: 10px; */
-}
 
-.about_button {
-  background-color: rgb(224, 15, 102) !important;
-  border: 1px solid rgb(224, 15, 102) !important;
-  color: white !important;
-  height: 36px;
-  border-radius: 50px;
-}
-
-.shop_history {
-  color: black !important;
-}
-
-.about_icon {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-}
-
-.icon_part {
-  border-bottom: 1px solid black;
-
-  width: 450px;
-}
-
-.icon_two {
-  margin-left: 370px;
-}
-
-.icon_four {
-  margin-left: 370px;
-}
 
 /* make it responsive */
 @media only screen and (max-width: 688px) {
