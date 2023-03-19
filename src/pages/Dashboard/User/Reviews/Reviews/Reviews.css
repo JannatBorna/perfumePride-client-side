@@ -3,10 +3,6 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-.word-color{
-    font-size: 40px;
-    color: rgb(177, 61, 61);
-}
 
 .fa-resolving{
    color: rgb(228, 15, 15) !important;

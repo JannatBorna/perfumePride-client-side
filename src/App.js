@@ -11,12 +11,12 @@ import Banner from './pages/Home/Banner/Banner';
 import Explores from './pages/Home/Explores/Explores/Explores';
 import Home from './pages/Home/Home/Home';
 import NotFound from './pages/Home/NotFound/NotFound';
-import Products from './pages/Home/Products/Products';
+import Products from './pages/Home/HomeExplores/HomeExplores/HomeExplores';
 import Login from './pages/Login/Login/Login';
 import PrivateRoute from './pages/Login/Login/PrivateRoute/PrivateRoute';
 import Register from './pages/Login/Register/Register';
-import Footer from './pages/Shared/Footer/Footer';
-import Navigation from './pages/Shared/Navigation/Navigation';
+// import Footer from './pages/Shared/Footer/Footer';
+// import Navigation from './pages/Shared/Navigation/Navigation';
 
 
 
@@ -26,7 +26,7 @@ function App() {
     <div className="App">
        <AuthProvider>
         <Router>
-          <Navigation />
+          {/* <Navigation /> */}
           <Switch>
             <Route exact path="/">
               <Home />
@@ -89,7 +89,7 @@ function App() {
 
 
           </Switch>
-          <Footer />
+          {/* <Footer /> */}
         </Router>
        </AuthProvider>
      </div>

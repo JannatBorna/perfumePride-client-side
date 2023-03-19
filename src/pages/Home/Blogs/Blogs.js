@@ -9,8 +9,8 @@ const Blogs = () => {
     return (
       <Container>
         <div>
-          <h2 className="text_header">
-            <span className="word_color">O</span>UR BLOGS
+          <h2 className="text-header">
+            OUR <span className="word-color">B</span>LOGS
           </h2>
           <div className="blogs_container my-4">
             <div>

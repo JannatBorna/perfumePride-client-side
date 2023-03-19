@@ -17,8 +17,8 @@ const Reviews = () => {
 
     return (
       <div>
-        <h2 className="text-center fw-3 text_header">
-          <span className="word_color">R</span>EVIEWS
+        <h2 className="text-center fw-3 text-header">
+          CLIENT <span className="word-color">R</span>EVIEWS
         </h2>
 
         <div className="reviews-container">

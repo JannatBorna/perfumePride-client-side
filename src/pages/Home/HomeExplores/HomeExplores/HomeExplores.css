@@ -1,22 +1,18 @@
-.products-container {
+.homeExplores-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
-.text_header {
-  font-size: 30px;
-  color: rgb(82, 80, 80) !important;
-  font-family: monospace;
-}
 
 @media only screen and (max-width: 688px) {
-  .products-container {
+  .homeExplores-container {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media only screen and (min-width: 689px) and (max-width: 991px) {
-  .products-container {
+  .homeExplores-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }

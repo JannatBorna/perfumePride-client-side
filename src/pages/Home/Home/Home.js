@@ -1,24 +1,27 @@
 import React from 'react';
 import Reviews from '../../Dashboard/User/Reviews/Reviews/Reviews';
-import About from '../About/About';
 import Blogs from '../Blogs/Blogs';
 import Others from '../Others/Others';
-import Products from '../Products/Products';
+import HomeExplores from '../HomeExplores/HomeExplores/HomeExplores';
 import Banner from './../Banner/Banner';
-import './Home.css';
+import Navigation from '../../Shared/Navigation/Navigation';
+import Footer from '../../Shared/Footer/Footer';
+import Employe from '../Employe/Employe';
+
 
 
 const Home = () => {
-    return (
+
+  return (
       <div>
-        <Banner></Banner>
-        {/* <div className="products_section"> */}
-          <Products></Products>
-        {/* </div> */}
-        <Blogs></Blogs>
-        <Others></Others>
-        <About></About>
-        <Reviews></Reviews>
+        <Navigation />
+        <Banner />
+        <HomeExplores />
+        <Employe />
+        <Others />
+        <Blogs />
+        <Reviews />
+        <Footer />
       </div>
     );
 };

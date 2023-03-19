@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './Explores.css'
 import Explore from '../Explore/Explore';
+import Navigation from '../../../Shared/Navigation/Navigation';
+import Footer from '../../../Shared/Footer/Footer';
 
 
 const Explores = () => {
@@ -14,9 +16,7 @@ const Explores = () => {
 
     return (
         <div>
-            <h2 className="text-center fw-3">Our <span className="word-color"><i className="fab fa-pinterest-p"></i></span>roducts</h2>
-
-
+            <Navigation />
             <div className="explores-container">
 
                 {
@@ -30,6 +30,7 @@ const Explores = () => {
 
 
             </div>
+            <Footer />
         </div>
     );
 };
