@@ -8,7 +8,7 @@ const Reviews = () => {
     
     useEffect(() => {
 
-        fetch('https://desolate-sea-37549.herokuapp.com/reviews')
+        fetch('./review.json')
         .then(res => res.json())
         .then(data => setReviews(data))
     } ,[])

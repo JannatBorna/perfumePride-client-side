@@ -10,9 +10,9 @@ const Products = () => {
     
 
     useEffect(() => {
-        fetch('https://desolate-sea-37549.herokuapp.com/products')
+        fetch('./product.json')
         .then(res => res.json())
-            .then(data => setProducts(data))
+        .then(data => setProducts(data))
     } ,[])
 
 

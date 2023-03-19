@@ -7,7 +7,7 @@ const Explores = () => {
     const [explores, setExplores] = useState([]);
 
     useEffect(() => {
-        fetch('https://desolate-sea-37549.herokuapp.com/products')
+        fetch('./product.json')
             .then(res => res.json())
             .then(data => setExplores(data))
     }, [])

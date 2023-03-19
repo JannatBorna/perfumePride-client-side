@@ -1,0 +1,25 @@
+[
+    {
+        "id":"01",
+        "name":"Rose",
+        "img":"https://i.ibb.co/XFF9ZpW/R-3.jpg",
+        "description":"First and foremost the most important thing that affects how a perfume…",
+        "rating": "5"
+    },
+
+        {
+        "id":"02",
+        "name":"Jannat Borna",
+        "img":"https://i.ibb.co/c2Msv7n/R-2.webp",
+        "description":"These products are very good. A lot of good products go a long way her…",
+        "rating": "5"
+    },
+
+        {
+        "id":"03",
+        "name":"Sweet Girl",
+        "img":"https://i.ibb.co/C2BGm78/R-1.jpg",
+        "description":"perfumes with heavier base notes will last the longest. If your perfum…",
+        "rating": "4"
+    }  
+]

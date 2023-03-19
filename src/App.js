@@ -7,7 +7,7 @@ import Dashboard from './pages/Dashboard/Dashboard/Dashboard/Dashboard';
 import Reviews from './pages/Dashboard/User/Reviews/Reviews/Reviews';
 import About from './pages/Home/About/About';
 import Banner from './pages/Home/Banner/Banner';
-import Booking from './pages/Home/Booking/Booking';
+// import Booking from './pages/Home/Booking/Booking';
 import Explores from './pages/Home/Explores/Explores/Explores';
 import Home from './pages/Home/Home/Home';
 import NotFound from './pages/Home/NotFound/NotFound';
@@ -56,9 +56,13 @@ function App() {
               <Reviews />
             </Route>
 
-            <PrivateRoute path="/booking/:productId">
-              <Booking />
-            </PrivateRoute>
+            <Route exact path="/products">
+              <Products />
+            </Route>
+
+            {/* <PrivateRoute path="/booking/:productId"> */}
+              {/* <Booking /> */}
+            {/* </PrivateRoute> */}
 
             <PrivateRoute path="/dashboard">
               <Dashboard />

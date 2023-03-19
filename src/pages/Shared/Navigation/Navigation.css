@@ -1,23 +1,23 @@
 .header {
-  background-color: rgb(247, 236, 241) !important;
+  background-color: #f7ecf1 !important;
   height: 85px;
 }
 
 .header-text {
-  color: rgb(0, 0, 0) !important;
+  color: #000000 !important;
 }
 
 .header-text:hover {
-  background-color: rgb(255, 253, 253) !important;
-  color: rgb(228, 50, 50) !important;
-  border-radius: 4px;
-  height: 35px;
+  background-color: #fffdfd !important;
+  color: #e43232 !important;
 }
 
 .btn-logout {
-  background-color: rgb(230, 223, 224) !important;
-  border-radius: 500px;
-  color: rgb(17, 16, 16) !important;
+  padding: 0.5em;
+  background-color: #f9bfc8 !important;
+  border: 1px solid #e6dfe0 !important;
+  color: #111010 !important;
+  letter-spacing: 3px;
 }
 .image {
   width: 35%;
@@ -25,18 +25,20 @@
 }
 
 .text {
-  color: rgb(3, 3, 3) !important;
+  color: #030303 !important;
   font-size: 17px;
   font-weight: 500;
 }
 
 .website-name {
-  color: rgb(231, 146, 175) !important;
+  color: #e792af !important;
   font-size: 25px;
+  font-family: fantasy;
+  font-weight: 600;
 }
 
 .fa-pinterest-p {
-  color: rgb(224, 15, 102) !important;
+  color: #e00f66 !important;
   font-size: 50px;
 }
 
@@ -45,7 +47,7 @@
 }
 
 #basic-nav-dropdown {
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
 @media only screen and (max-width: 688px) {
@@ -58,8 +60,8 @@
   }
 
   .header-text:hover {
-    background-color: rgb(124, 89, 89) !important;
-    color: rgb(0, 0, 0) !important;
+    background-color: #7c5959 !important;
+    color: #000000 !important;
     border-radius: 4px;
     height: 35px;
   }
@@ -67,16 +69,16 @@
 
 @media only screen and (min-width: 689px) and (max-width: 991px) {
   #responsive-navbar-nav {
-    background-color: rgb(126, 124, 124);
-    color: black;
+    background-color: #7e7c7c;
+    color: #000000 !important;
   }
   .header-text {
-    color: rgb(0, 0, 0) !important;
+    color: #000000 !important;
   }
 
   .header-text:hover {
-    background-color: rgb(124, 89, 89) !important;
-    color: rgb(0, 0, 0) !important;
+    background-color: #7c5959 !important;
+    color: #000000 !important;
     border-radius: 4px;
     height: 35px;
   }
