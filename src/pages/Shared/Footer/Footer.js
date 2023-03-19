@@ -5,107 +5,110 @@ import {
   faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faMapMarkedAlt, faPhoneVolume
+faEnvelope, faGlobe, faPhone
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from 'react';
+import { Col, Container, Row } from "react-bootstrap";
 import "./Footer.css";
 
 
 const Footer = () => {
     return (
       <div className="footer-responsive mt-5">
-        <hr
-          style={{
-            color: "#656869",
-            backgroundColor: "#656869",
-            height: 1,
-            borderColor: "#656869",
-          }}
-        />
-
-        <div className="footer-container">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-5">
-                <div className="left-container text-start">
-                  <span className="website-name mb-5">
-                    <i className="fab fa-pinterest-p"></i>erfume Pride
+        <div className="footer">
+          <Container>
+            <Row>
+              <Col lg={4} md={4} sm={12}>
+                <div className="footer-left text-start mt-4">
+                  <span>
+                    <i className="fab fa-pinterest-p"></i>erfumePride
                   </span>
 
                   <br />
-                  <div className="icons-container d-flex text-center mt-3">
-                    <div className="icon icon_instagram">
+                  <div className="d-flex mt-3">
+                    <div className="icon-footer">
                       <FontAwesomeIcon icon={faInstagramSquare} />
                     </div>
-                    <div className="icon icon_twitter">
+                    <div className="icon-footer">
                       <FontAwesomeIcon icon={faTwitterSquare} />
                     </div>
-                    <div className="icon icon_youtube">
+                    <div className="icon-footer">
                       <FontAwesomeIcon icon={faYoutube} />
                     </div>
-                    <div className="icon icon_facebook">
+                    <div className="icon-footer">
                       <FontAwesomeIcon icon={faFacebookSquare} />
                     </div>
                   </div>
                   <p className="mt-4 text-white">
                     <small>
                       Perfume can play an important role in our wardrobe.
-                      Whether you prefer to apply your signature scent for a
+                      Whether you prefer timport apply your signature scent for a
                       date night or for a work day in the office, fragrances
                       help give us a certain aura and presence. Part of what
                       creates this presence for each person is the use of
                       fragrance notes.
                     </small>
                   </p>
-
-                  <p className="mt-5 text-white">
-                    <small>Perfume_Pride © All rights </small>
-                  </p>
                 </div>
-              </div>
-              <div className="col-md-2">
-                <div className="footer-menu-container">
+              </Col>
+
+              <Col lg={4} md={4} sm={12}>
+                <div className="mt-5 d-flex text-start">
                   <ul>
-                    <li className="footer-menu">Home</li>
-                    <li className="footer-menu">Services</li>
-                    <li className="footer-menu">About</li>
-                    <li className="footer-menu">Contact us</li>
+                    <li className="footer-menu">Theme Design</li>
+                    <li className="footer-menu my-3">Html Template</li>
+                    <li className="footer-menu">PSD template</li>
+                    <li className="footer-menu my-3">Figma template</li>
+                    <li className="footer-menu">Terms of service</li>
+                    <li className="footer-menu my-3">Cookies Policy</li>
+                    <li className="footer-menu">F.A.Q</li>
                   </ul>
-                </div>
-              </div>
-              <div className="col-md-5">
-                <div className="right-footer-container">
-                  <h3 className="text-white">Sign up</h3>
-                  <input
-                    className="footer-input"
-                    type="text"
-                    placeholder="Enter Email"
-                  />
-                  <div className="phone d-flex align-items-center justify-content-center mt-4">
-                    <div className="footer-phone-icon">
-                      <FontAwesomeIcon icon={faPhoneVolume} />
-                    </div>
-                    <div>
-                      <h5 className="text-white">+0 1 7 777 000 22</h5>
-                    </div>
-                  </div>
-                  <div className="map d-flex align-items-center justify-content-center">
-                    <div className="footer-phone-icon">
-                      <FontAwesomeIcon icon={faMapMarkedAlt} />
-                    </div>
-                    <div>
-                      <p className="text-white">www.Perfume_Pride.COM.com</p>
 
-                      <p className="text-white mx-2">
-                        Perfume_Pride.COM@pride.com
-                      </p>
-                    </div>
-                  </div>
+                    <ul className="mx-4">
+                      <li className="footer-menu">Home</li>
+                      <li className="footer-menu my-3">Services</li>
+                      <li className="footer-menu">About</li>
+                      <li className="footer-menu my-3">Blogs</li>
+                      <li className="footer-menu">Contact</li>
+                      <li className="footer-menu my-3">Pages</li>
+                      <li className="footer-menu">Single Page</li>
+                    </ul>
                 </div>
-              </div>
-            </div>
-          </div>
+              </Col>
+
+              <Col lg={4} md={4} sm={12}>
+                <div className="footer-right mt-5">
+                   <div className="footer-subscribe">
+                      <input type="text" placeholder="Enter Email"/>
+                      <button className="text-white mx-4">Subscribe</button>
+                   </div>
+
+                  <div className="d-flex mt-4 footer-icon">
+                      <FontAwesomeIcon icon={faPhone} />
+                      <h4 className="mx-5"><a href="tel:+0 1 7 777 000 22">+0 1 7 777 000 22</a></h4>
+                  </div>
+
+                  <div className="d-flex mt-4 footer-icon">
+                      <FontAwesomeIcon icon={faGlobe} />
+                      <h5 className="mx-5"><a href="https://www.perfumePride.com/">www.perfumePride.com</a></h5>
+                  </div>
+
+                  <div className="d-flex mt-4 footer-icon">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    <h5 className="mx-5"><a href="mailto:perfumepride@pride.com">perfumepride@pride.com</a></h5>
+                  </div>
+
+                </div>
+              </Col>
+            </Row>
+          </Container>
+                
+                <p className="mt-5 sub-footer">
+                  <hr />
+                  <small>PerfumePride &#169; Borna Dilruba </small>
+                  <hr />
+                </p>
         </div>
       </div>
     );
