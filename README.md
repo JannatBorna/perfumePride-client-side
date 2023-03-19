@@ -1,10 +1,10 @@
 # Website name  - `PerfumePride`
 
-> Github Client code
+ ***Github Client code***
 `https://github.com/JannatBorna/project-client-side-assignment-12`
-> Github Server code
+***Github Server code***
  `https://github.com/JannatBorna/project-server-side-assignment-12`
- > Website live link
+ ***Website live link***
  `https://assignment12-5175d.web.app`
 
 ***description***
