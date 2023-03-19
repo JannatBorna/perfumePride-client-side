@@ -1,7 +1,6 @@
-.about_section {
+.employe-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-gap: 10px; */
 }
 
 .employe-btn {
@@ -11,29 +10,30 @@
   color: #000000 !important;
 }
 
-.shop_history {
-  color: black !important;
+.employe-text h1{
+  font-size: 40px;
+  letter-spacing: 10px;
+  color: #ff99b7 !important;
+  /* border-bottom: 2px solid #d72050; */
+  /* width: 75%; */
 }
 
-.about_icon {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+.employe-text h1 span{
+  font-size: 40px;
+  color: #d72050 !important;
 }
 
-.icon_part {
-  border-bottom: 1px solid black;
-
-  width: 450px;
+.employe-img img{
+  width: 100%;
 }
 
-.icon_two {
-  margin-left: 370px;
+.employe-img h1{
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: #737373 !important;
 }
 
-.icon_four {
-  margin-left: 370px;
-}
 
 /* make it responsive */
 @media only screen and (max-width: 688px) {

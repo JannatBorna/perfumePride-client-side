@@ -10,36 +10,36 @@ const Blogs = () => {
       <Container>
         <div>
           <h2 className="text-header">
-            OUR <span className="word-color">B</span>LOGS
+            <span className="word-color">B</span>LOGS
           </h2>
-          <div className="blogs_container my-4">
-            <div>
-              <div>
-                <img className="blog_one" src={blog1} alt="" />
+          <div className="blogs-container my-4">
+            <div className='text-start'>
+              <div className="blogs-img-one">
+                <img src={blog1} alt="" />
               </div>
-              <div>
-                <h6>Perfume Capital Of The World</h6>
-                <h5>It was the glove makers who first tried</h5>
-              </div>
-            </div>
-
-            <div>
-              <div>
-                <img className="blog_two" src={blog2} alt="" />
-              </div>
-              <div>
-                <h6>Perfume Capital Of The World</h6>
-                <h5>It was the glove makers who first tried</h5>
+              <div className="blogs-text mt-3">
+                <h4>Perfume Capital Of The World</h4>
+                <h6>The hall smelled of her mother's perfume.  There <br/>were two lemon trees and I paused to enjoy their <br/>perfume.</h6>
               </div>
             </div>
 
-            <div>
-              <div>
-                <img className="blog_three" src={blog3} alt="" />
+            <div className='text-start'>
+              <div className="blogs-img-two">
+                <img src={blog2} alt="" />
               </div>
-              <div>
-                <h6>Perfume Capital Of The World</h6>
-                <h5>It was the glove makers who first tried</h5>
+              <div className="blogs-text mt-3">
+                <h4>Perfume Capital Of The World</h4>
+                <h6>Flowers started to perfume the air. As they bake,  <br/> they perfume the whole house with the aroma of  <br/> apples and spices.</h6>
+              </div>
+            </div>
+
+            <div className='text-start'>
+              <div className="blogs-img-three">
+                <img src={blog3} alt="" />
+              </div>
+              <div className="blogs-text mt-3">
+                <h4>Perfume Capital Of The World</h4>
+                <h6>It was the glove makers who first tried.Perfume is <br/>like a new dress, it makes you quite simply<br/> marvellous.</h6>
               </div>
             </div>
           </div>

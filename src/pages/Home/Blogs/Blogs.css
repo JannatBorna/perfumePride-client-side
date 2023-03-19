@@ -1,4 +1,4 @@
-.blogs_container {
+.blogs-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* grid-gap: 10px; */
@@ -11,17 +11,28 @@
 }
 
 
-.blog_one {
+.blogs-img-one img {
   width: 90%;
   height: 500px;
 }
 
-.blog_two {
+.blogs-img-two img{
   width: 90%;
   height: 440px;
 }
 
-.blog_three {
+.blogs-img-three img{
   width: 90%;
   height: 350px;
 }
+
+.blogs-text h4{
+  color: #f68eae !important;
+  font-family: fantasy;
+  font-weight: 600;
+}
+
+.blogs-text h6{
+  color: #404040 !important;
+}
+

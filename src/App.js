@@ -15,8 +15,6 @@ import Products from './pages/Home/HomeExplores/HomeExplores/HomeExplores';
 import Login from './pages/Login/Login/Login';
 import PrivateRoute from './pages/Login/Login/PrivateRoute/PrivateRoute';
 import Register from './pages/Login/Register/Register';
-// import Footer from './pages/Shared/Footer/Footer';
-// import Navigation from './pages/Shared/Navigation/Navigation';
 
 
 

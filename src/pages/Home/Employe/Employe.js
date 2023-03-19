@@ -12,30 +12,23 @@ const Employe = () => {
           <h2 className="text-header">
             <span className="word-color">W</span>ORKER TEAM
           </h2>
-          <div className="about_section my-3">
-            <div>
-              <h2 className="shop_history">Our Shop History</h2>
-              <div>
+          <div className="employe-section my-5">
+            <div className="employe-text text-start">
+              <h1>Our Shop History<span>&#8212;</span></h1>
                 <p className="my-4">
-                  The origin of perfume is commonly attributed to the ancient
-                  <br /> Egyptians. They utilized scents to celebrate prayers
-                  <br /> and religious ceremony by burning essential <br />
-                  oils, resin, and perfumed unguents. This <br /> practice had
-                  several functions.
+                  The origin of perfume is commonly attributed to the ancient Egyptians. <br />  They utilized scents to celebrate prayers and religious ceremony by  <br /> burning essential oils, resin, us dream and perfumed unguents. This <br />practice functions. Perfume is a story in odour, sometimes poetry<br /> in memory
                 </p>
-                <h5 className="my-3" s>
-                  History of Perfume Around the World
+                <h5 className="my-3">
+                  History of Perfume Around the World...
                 </h5>
                 <button className="employe-btn my-3">Read More</button>
-              </div>
             </div>
 
-            <div>
-              <h2>Our Employee</h2>
-              <div className="my-4">
-                <img className="w-75" src={iconImage} alt="" />
-              </div>
+            <div className="employe-img">
+              <h1 className='mb-5'>Work Employee</h1>
+                <img src={iconImage} alt="" />
             </div>
+
           </div>
         </div>
       </Container>

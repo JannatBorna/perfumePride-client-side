@@ -20,16 +20,14 @@ const Navigation = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className=" header-text" />
                 <Navbar.Collapse id="responsive-navbar-nav" >
                     <Nav className="me-auto my-3">
-                        <Nav.Link as={HashLink} to="/home#home" className=" header-text">Home</Nav.Link>
-                        <Nav.Link as={HashLink} to="/about#about" className=" header-text">About</Nav.Link>
-                        <Nav.Link as={HashLink} to="/explores#explores" className=" header-text">Explores</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#home" className="header-text">Home</Nav.Link>
+                        <Nav.Link as={HashLink} to="/about#about" className="header-text">About</Nav.Link>
+                        <Nav.Link as={HashLink} to="/explores#explores" className="header-text">Explores</Nav.Link>
                     </Nav>
 
-                    <Nav.Link as={HashLink} to="/dashboard#dashboard" className="header-text">Dashboard</Nav.Link>
 
-                    
- 
- 
+                    <Nav>
+                        <Nav.Link as={HashLink} to="/dashboard#dashboard" className="header-text">Dashboard</Nav.Link>
 
                     {
                         user?.email ? 
@@ -57,6 +55,8 @@ const Navigation = () => {
                             <Nav.Link as={HashLink} to="/login" className="header-text mx-3">Login
                             </Nav.Link>
                     } 
+
+                    </Nav>
 
                   </Navbar.Collapse>
 

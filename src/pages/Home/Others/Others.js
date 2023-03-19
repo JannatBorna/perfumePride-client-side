@@ -13,7 +13,7 @@ const Others = () => {
       <div>
         <Container className="my-5">
           <h1 className="text-center fw-3 text-header">
-            OTHERS <span className="word-color">C</span>OLLECTION
+            <span className="word-color">C</span>OLLECTION
           </h1>
 
           <Row lg={1} md={1} xs={1} className="g-4">
