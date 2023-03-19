@@ -5,8 +5,11 @@
     padding: 15px;
 }
 
-.btn{
-    background-color: rgb(221, 68, 68)!important;
+.btn-notfound{
+    padding: 0.5em;
+    background-color: #f98fbd!important;
+    border: 1px solid #f98fbd;
+    letter-spacing: 5px;
     
 }
 
@@ -16,5 +19,5 @@
 }
 
 .fa-sad-tear{
-    color: rgb(221, 68, 68) !important;
+    color: #fd91bd !important;
 }

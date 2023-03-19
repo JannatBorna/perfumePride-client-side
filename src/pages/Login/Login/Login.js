@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
-import login from '../../../images/login2.png';
+import login from '../../../images/others/login2.png';
 
 const Login = () => {
 

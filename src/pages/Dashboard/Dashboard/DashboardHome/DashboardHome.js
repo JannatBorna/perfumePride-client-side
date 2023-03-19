@@ -1,8 +1,8 @@
 import { Box } from '@mui/system';
 import React from 'react';
 import useAuth from '../../../../hooks/useAuth';
-import admin1 from '../../../../images/admin.jpg'
-import user1 from '../../../../images/user.png'
+import admin1 from '../../../../images/others/admin.jpg'
+import user1 from '../../../../images/others/user.png'
 import './DashboardHome.css'
 
 
