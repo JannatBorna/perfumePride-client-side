@@ -6,11 +6,11 @@
   border-radius: 7px;
 }
 
-.explore:hover {
-  z-index: 1;
-  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);
-}
+/* .explore:hover { */
+  /* z-index: 1; */
+  /* box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2); */
+  /* transform: scale(1.05); */
+/* } */
 
 .description-text {
   font-size: 11px;

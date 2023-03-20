@@ -1,3 +1,46 @@
+.about-1 img{
+  width: 80%;
+  height: 80%;
+  border-radius: 200px;
+}
+
+.about-2 img{
+  width: 50%;
+  height: 50%;
+  border-radius: 200px;
+  margin-right: 180px;
+}
+
+.about-3 img{
+  width: 50%;
+  height: 40%;
+  /* border-radius: 200px; */
+  background-color: #ffffff !important;
+}
+
+.adout-mid{
+  text-align: start;
+}
+
+.adout-mid h2 span{
+  color: #fb9fac !important;
+  font-size: 40px;
+}
+
+.about-right{
+  border-left: 1px solid #fb9fac;
+}
+
+.about-right img{
+  width: 30%;
+  height: 30%;
+  border-radius: 100px;
+}
+
+.about-right p a{
+  color: #fb9fac !important;
+  letter-spacing: 4px;
+}
 
 
 /* make it responsive */

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import iconImage from '../../../images/about/about-5.jpg';
+import iconImage from '../../../images/others/employe.jpg';
 import './Employe.css';
 
 

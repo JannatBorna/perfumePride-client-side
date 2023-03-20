@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import './Explores.css'
 import Explore from '../Explore/Explore';
 import Navigation from '../../../Shared/Navigation/Navigation';
 import Footer from '../../../Shared/Footer/Footer';
+import { Container } from 'react-bootstrap';
+import './Explores.css';
 
 
 const Explores = () => {
@@ -17,19 +18,15 @@ const Explores = () => {
     return (
         <div>
             <Navigation />
-            <div className="explores-container">
-
-                {
-                    explores.map(explore => <Explore
-                        explore={explore}
-                        
-
-
-                    ></Explore>)
-                }
-
-
-            </div>
+            <Container>
+                <div className="explores-container">
+                    {
+                        explores.map(explore => <Explore
+                            explore={explore}
+                        ></Explore>)
+                    }
+                </div>
+            </Container>
             <Footer />
         </div>
     );
