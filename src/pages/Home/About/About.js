@@ -9,7 +9,7 @@ import about6 from '../../../images/about/about-6.png';
 import about7 from '../../../images/about/about-7.png';
 import about8 from '../../../images/about/about-8.png';
 import about9 from '../../../images/about/about-9.png';
-import aboutsec1 from '../../../images/about/about-sec.png';
+import aboutsec1 from '../../../images/about/about-sec-1.png';
 import aboutsec2 from '../../../images/about/about-sec-2.png';
 import aboutsec3 from '../../../images/about/about-sec-3.png';
 import aboutsec4 from '../../../images/about/about-sec-4.png';
