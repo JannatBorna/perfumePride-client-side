@@ -9,6 +9,10 @@ import about6 from '../../../images/about/about-6.png';
 import about7 from '../../../images/about/about-7.png';
 import about8 from '../../../images/about/about-8.png';
 import about9 from '../../../images/about/about-9.png';
+import aboutsec1 from '../../../images/about/about-sec.png';
+import aboutsec2 from '../../../images/about/about-sec-2.png';
+import aboutsec3 from '../../../images/about/about-sec-3.png';
+import aboutsec4 from '../../../images/about/about-sec-4.png';
 import Footer from '../../Shared/Footer/Footer';
 import Navigation from '../../Shared/Navigation/Navigation';
 import './About.css';
@@ -78,6 +82,30 @@ const About = () => {
             </div>
           </Col>
         </Row>
+
+        <div className='aboutsec mt-2'>
+          <div className='aboutsec1'>
+            <img src={aboutsec1} alt="" className='mt-5 p-5'/>
+          </div>
+
+          <div className='aboutsec2'>
+            <div>
+              <img src={aboutsec2} alt=""/>
+              <p>In the special case of products with relevant olfactory impact —perfumes, cosmetics, households, air fresheners.</p>
+              <a href="/">SEE MORE</a>
+            </div>
+            <div>
+              <img src={aboutsec3} alt=""/>
+              <p>Transmission of requirements is a very delicate step, in which people with strongly different competences.</p>
+              <a href="/">SEE MORE</a>
+            </div>
+            <div>
+              <img src={aboutsec4} alt=""/>
+              <p>As famous perfumer Olivier Creed once said, be remembered, but your perfume will. There’s even a word for it.</p>
+              <a href="/">SEE MORE</a>
+            </div>
+          </div>
+        </div>
       </Container>
       <Footer />
     </div>
