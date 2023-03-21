@@ -15,6 +15,7 @@ import Products from './pages/Home/HomeExplores/HomeExplores/HomeExplores';
 import Login from './pages/Login/Login/Login';
 import PrivateRoute from './pages/Login/Login/PrivateRoute/PrivateRoute';
 import Register from './pages/Login/Register/Register';
+import SeeMore from './pages/Home/SeeMore/SeeMore';
 
 
 
@@ -56,6 +57,10 @@ function App() {
 
             <Route exact path="/products">
               <Products />
+            </Route>
+
+            <Route exact path="/seemore">
+              <SeeMore />
             </Route>
 
             {/* <PrivateRoute path="/booking/:productId"> */}

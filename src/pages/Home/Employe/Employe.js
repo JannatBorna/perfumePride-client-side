@@ -21,7 +21,7 @@ const Employe = () => {
                 <h5 className="my-3">
                   History of Perfume Around the World...
                 </h5>
-                <button className="employe-btn my-3">Read More</button>
+                <a href="/seemore"><button className="employe-btn my-3">Read More</button></a>
             </div>
 
             <div className="employe-img">

@@ -52,32 +52,32 @@ const About = () => {
             <div className='about-right mt-5'>
               <div>
                 <img src={about4} alt="" />
-                <p className='mt-3'><a href="/">SEE MORE</a></p>
+                <p className='mt-3'><a href="/seemore">SEE MORE</a></p>
               </div>
           
               <div>
                 <img src={about5} alt="" />
-                <p className='mt-3'><a href="/">SEE MORE</a></p>
+                <p className='mt-3'><a href="/seemore">SEE MORE</a></p>
               </div>
 
               <div>
                 <img src={about6} alt="" />
-                <p className='mt-3'><a href="/">SEE MORE</a></p>
+                <p className='mt-3'><a href="/seemore">SEE MORE</a></p>
               </div>
 
               <div>
                 <img src={about7} alt="" />
-                <p className='mt-3'><a href="/">SEE MORE</a></p>
+                <p className='mt-3'><a href="/seemore">SEE MORE</a></p>
               </div>
 
               <div>
                 <img src={about8} alt="" />
-                <p className='mt-3'><a href="/">SEE MORE</a></p>
+                <p className='mt-3'><a href="/seemore">SEE MORE</a></p>
               </div>
 
               <div>
                 <img src={about9} alt="" />
-                <p className='mt-3'><a href="/">SEE MORE</a></p>
+                <p className='mt-3'><a href="/seemore">SEE MORE</a></p>
               </div>
             </div>
           </Col>
@@ -92,17 +92,17 @@ const About = () => {
             <div>
               <img src={aboutsec2} alt=""/>
               <p>In the special case of products with relevant olfactory impact —perfumes, cosmetics, households, air fresheners.</p>
-              <a href="/">SEE MORE</a>
+              <a href="/seemore">SEE MORE</a>
             </div>
             <div>
               <img src={aboutsec3} alt=""/>
               <p>Transmission of requirements is a very delicate step, in which people with strongly different competences.</p>
-              <a href="/">SEE MORE</a>
+              <a href="/seemore">SEE MORE</a>
             </div>
             <div>
               <img src={aboutsec4} alt=""/>
               <p>As famous perfumer Olivier Creed once said, be remembered, but your perfume will. There’s even a word for it.</p>
-              <a href="/">SEE MORE</a>
+              <a href="/seemore">SEE MORE</a>
             </div>
           </div>
         </div>
