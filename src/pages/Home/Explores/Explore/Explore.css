@@ -1,37 +1,51 @@
 .explore {
-  margin: 50px;
-  padding: 10px;
-  border: 1px solid rgb(228, 226, 226);
-  height: 335px;
+  box-shadow: 0 8px 50px #00000033;
+  height: 70vh;
   border-radius: 7px;
+  text-align: start;
 }
 
-/* .explore:hover { */
-  /* z-index: 1; */
-  /* box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2); */
-  /* transform: scale(1.05); */
-/* } */
 
-.description-text {
-  font-size: 11px;
-  color: rgb(32, 31, 31);
+.explore img {
+  width: 100%;
+  height: 60%;
+
 }
 
-.name-text {
+.explore h4 {
+  padding: 0.5em;
   font-size: 20px;
-  color: rgb(26, 25, 25);
+  color: #756e6e !important;
 }
 
-.price-text {
-  font-size: 14px;
-  color: rgb(17, 17, 17);
+.explore h6{
+  padding: 0.5em;
+  font-size: 15px;
+  color: #302f2f !important;
+    
 }
 
-.butt-color {
-  background-color: rgb(165, 219, 221) !important;
-  color: rgb(7, 7, 7) !important;
+.explore div p{
+  padding: 0.8em;
+  font-size: 18px;
+  color: #fc1d6b !important;
+  font-weight: 600;
 }
 
-.explore_image {
-  width: 160px;
+
+
+
+.explore div .explore-btn {
+  padding: 0.5em;
+  background-color: #fdcce1 !important;
+  border: 1px solid #fdcce1!important;
+  color: #000000 !important;
+  margin-left: 150px;
 }
+
+.explore div .explore-btn:hover {
+  background-color: #ffffff !important;
+  border: 1px solid #ed1271!important;
+  color: #fc0c80 !important;
+}
+

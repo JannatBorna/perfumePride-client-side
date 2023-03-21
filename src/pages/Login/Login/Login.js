@@ -4,6 +4,8 @@ import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 import login from '../../../images/others/login2.png';
+import Footer from '../../Shared/Footer/Footer';
+import Navigation from '../../Shared/Navigation/Navigation';
 
 const Login = () => {
 
@@ -31,6 +33,8 @@ const Login = () => {
 
 
     return (
+        <div>
+            <Navigation />
         <Container>
             <Grid container spacing={2}>
                 <Grid item sx={{ mt: 8 }} xs={12} md={6} className="input-login">
@@ -97,6 +101,8 @@ const Login = () => {
 
 
         </Container>
+        <Footer />
+        </div>
     );
 };
 

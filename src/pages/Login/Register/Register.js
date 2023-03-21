@@ -5,6 +5,8 @@ import { NavLink, useHistory } from 'react-router-dom';
 import login from '../../../images/others/signup.png'
 import useAuth from '../../../hooks/useAuth';
 import './Register.css'
+import Navigation from '../../Shared/Navigation/Navigation';
+import Footer from '../../Shared/Footer/Footer';
 
 
 
@@ -35,6 +37,8 @@ const Register = () => {
         e.preventDefault();
     }
     return (
+        <div>
+            <Navigation />
         <Container>
             <Grid container spacing={2} >
                 <Grid item sx={{ mt: 8 }} xs={12} md={6} className="input-login">
@@ -120,10 +124,9 @@ const Register = () => {
                 </Grid>
 
             </Grid>
-
-
         </Container>
-
+        <Footer />
+    </div>
 
     );
 };
