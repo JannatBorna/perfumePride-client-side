@@ -39,7 +39,6 @@ const SeeMore = () => {
                                 that coined them.
                                 </p>
                                 </div>
-                                
                             </div>
                         </Col>
                         <Col lg={6} md={6} sm={12}>
