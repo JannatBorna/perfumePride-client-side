@@ -1,0 +1,21 @@
+[
+   {
+        "email":"admin@admin.com",
+        "displayName":"Admin",
+        "role":"admin"
+   },
+
+    {
+        "email":"bornajannat12@gmail.com",
+        "displayName":"dilruba borna"
+    } ,
+    {
+        "email":"dilruba@borna.com",
+        "displayName":"Dilruba"
+    },
+
+    {
+        "email":"jannat@gmail.com",
+        "displayName":"Jannat"
+    }
+]

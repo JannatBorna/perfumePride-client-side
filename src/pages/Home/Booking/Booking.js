@@ -11,7 +11,7 @@ const Booking = () => {
     const [ product, setProduct ] = useState({});
 
     useEffect(() => {
-        fetch(`https://desolate-sea-37549.herokuapp.com/products/${productId}`)
+        fetch(`https://perfumepride-server-side.onrender.com/products/${productId}`)
         .then(res => res.json())
         .then(data => setProduct(data))
     }, [productId])

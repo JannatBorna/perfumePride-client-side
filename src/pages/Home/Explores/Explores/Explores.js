@@ -10,7 +10,7 @@ const Explores = () => {
     const [explores, setExplores] = useState([]);
 
     useEffect(() => {
-        fetch('./product.json')
+        fetch('https://perfumepride-server-side.onrender.com/products')
             .then(res => res.json())
             .then(data => setExplores(data))
     }, [])

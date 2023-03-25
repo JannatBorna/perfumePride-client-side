@@ -105,7 +105,7 @@ useEffect( () => {
 // user information
    const saveUser = (email, displayName, method) => {
        const user = {email, displayName};
-       fetch('https://desolate-sea-37549.herokuapp.com/users',{
+       fetch('https://perfumepride-server-side.onrender.com/users',{
            method: method,
            headers: {
                'content-type': 'application/json'
@@ -118,16 +118,10 @@ useEffect( () => {
 
 // admin verified
   useEffect(() => {
-      fetch(`https://desolate-sea-37549.herokuapp.com/users/${user.email}`)
+      fetch(`https://perfumepride-server-side.onrender.com/users/${user.email}`)
           .then(res => res.json())
           .then(data => setAdmin(data.admin))
   }, [user.email])
-
-
-
-
-
-
 
 
     return {

@@ -24,7 +24,7 @@ const AddProduct = () => {
 
         const newUser = { name, img, description, price };
 
-        fetch('https://desolate-sea-37549.herokuapp.com/products', {
+        fetch('https://perfumepride-server-side.onrender.com/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -15,7 +15,7 @@ const MyBookings = () => {
 
 
     useEffect(() => {
-        fetch('https://desolate-sea-37549.herokuapp.com/orders')
+        fetch('https://perfumepride-server-side.onrender.com/orders')
             .then(res => res.json())
             .then(data => setMyBookings(data))
     }, [])
@@ -24,7 +24,7 @@ const MyBookings = () => {
    
 
     useEffect(() => {
-        fetch('https://desolate-sea-37549.herokuapp.com/products')
+        fetch('https://perfumepride-server-side.onrender.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
@@ -33,7 +33,7 @@ const MyBookings = () => {
 
 
     const handleDelete = id => {
-        const url = `https://desolate-sea-37549.herokuapp.com/orders/${id}`
+        const url = `https://perfumepride-server-side.onrender.com/orders/${id}`
         fetch(url, {
             method: 'DELETE'
         })

@@ -10,14 +10,14 @@ const ManageProducts = () => {
     const [manageProducts, setManageProducts ] = useState([]);
 
      useEffect(() => {
-         fetch('https://desolate-sea-37549.herokuapp.com/products')
+         fetch('https://perfumepride-server-side.onrender.com/products')
             .then(res => res.json())
             .then(data => setManageProducts(data))
      }, [])
 
 
     const handleDelete = id => {
-        const url = `https://desolate-sea-37549.herokuapp.com/products/${id}`
+        const url = `https://perfumepride-server-side.onrender.com/products/${id}`
         fetch(url, {
             method: 'DELETE'
         })

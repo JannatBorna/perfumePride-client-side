@@ -15,7 +15,7 @@ const OrderPlace = () => {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        fetch(`https://desolate-sea-37549.herokuapp.com/products/${productId}`)
+        fetch(`https://perfumepride-server-side.onrender.com/products/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [productId])
@@ -43,7 +43,7 @@ const OrderPlace = () => {
 
         const newUser = { phoneNumber, address, products,name,img, price, description };
 
-        fetch('https://desolate-sea-37549.herokuapp.com/orders', {
+        fetch('https://perfumepride-server-side.onrender.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
