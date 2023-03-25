@@ -26,7 +26,7 @@ const Navigation = () => {
 
 
                     <Nav>
-                        <Nav.Link as={HashLink} to="/dashboard#dashboard" className="header-text">Dashboard</Nav.Link>
+                        <Nav.Link as={HashLink} to="/dashboard#dashboard" className="header-text text-danger">Dashboard</Nav.Link>
 
                     {
                         user?.email ? 
