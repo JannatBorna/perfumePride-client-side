@@ -1,5 +1,5 @@
 .header {
-  background-color: #f7ecf1 !important;
+  background-color: #ffffff !important;
   height: 85px;
 }
 
@@ -14,7 +14,7 @@
 
 .btn-logout {
   padding: 0.5em;
-  background-color: #f9bfc8 !important;
+  background-color: #ffffff !important;
   border: 1px solid #e6dfe0 !important;
   color: #111010 !important;
   letter-spacing: 3px;
