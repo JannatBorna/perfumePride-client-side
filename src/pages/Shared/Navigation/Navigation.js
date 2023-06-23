@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../hooks/useAuth';
+import logo from '../../../images/others/logo.png';
 import './Navigation.css';
 
 
@@ -14,19 +15,21 @@ const Navigation = () => {
         <Navbar collapseOnSelect expand="lg" className="header" sticky="top">
             <Container >
                 <Navbar.Brand as={HashLink} to="#home" >
-                    <span className="website-name"><i className="fab fa-pinterest-p"></i>erfumePride</span>
+                    <img src={logo} alt="" className='logo'/>
+                    {/* <span className="website-name"><i className="fab fa-pinterest-p"></i>erfumePride</span> */}
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className=" header-text" />
                 <Navbar.Collapse id="responsive-navbar-nav" >
                     <Nav className="me-auto my-3">
                         <Nav.Link as={HashLink} to="/home#home" className="header-text">HOME</Nav.Link>
-                        <Nav.Link as={HashLink} to="/about#about" className="header-text">PRODUCTS</Nav.Link>
+                         <Nav.Link as={HashLink} to="/about#about" className="header-text">ABOUT</Nav.Link>                       
+                        <Nav.Link as={HashLink} to="/product#product" className="header-text">PRODUCTS</Nav.Link>
                         <Nav.Link as={HashLink} to="/explores#explores" className="header-text">BRANDS</Nav.Link>
                     </Nav>
 
 
                     <Nav>
-                        <Nav.Link as={HashLink} to="/dashboard#dashboard" className="header-text text-danger">STORE</Nav.Link>
+                        <Nav.Link as={HashLink} to="/dashboard#dashboard" className="header-text">STORE</Nav.Link>
 
                     {
                         user?.email ? 

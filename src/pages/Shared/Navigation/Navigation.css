@@ -9,7 +9,7 @@
 
 .header-text:hover {
   background-color: #fffdfd !important;
-  color: #e43232 !important;
+  color: #e9b384 !important;
 }
 
 .btn-logout {
@@ -29,18 +29,20 @@
   font-size: 17px;
   font-weight: 500;
 }
-
-.website-name {
-  color: #e792af !important;
-  font-size: 25px;
-  font-family: fantasy;
-  font-weight: 600;
+.logo{
+  width: 100px;
 }
-
-.fa-pinterest-p {
-  color: #e00f66 !important;
-  font-size: 50px;
-}
+/* .website-name { */
+  /* color: #e792af !important; */
+  /* font-size: 25px; */
+  /* font-family: fantasy; */
+  /* font-weight: 600; */
+/* } */
+/*  */
+/* .fa-pinterest-p { */
+  /* color: #e00f66 !important; */
+  /* font-size: 50px; */
+/* } */
 
 #responsive-navbar-nav {
   color: black;
