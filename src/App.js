@@ -8,14 +8,14 @@ import Reviews from './pages/Dashboard/User/Reviews/Reviews/Reviews';
 import About from './pages/Home/About/About';
 import Banner from './pages/Home/Banner/Banner';
 import Booking from './pages/Home/Booking/Booking';
-import Explores from './pages/Home/Explores/Explores/Explores';
 import Home from './pages/Home/Home/Home';
 import NotFound from './pages/Home/NotFound/NotFound';
-import Products from './pages/Home/HomeExplores/HomeExplores/HomeExplores';
+import HomeExplores from './pages/Home/HomeProducts/HomeProducts/HomeProducts';
 import Login from './pages/Login/Login/Login';
 import PrivateRoute from './pages/Login/Login/PrivateRoute/PrivateRoute';
 import Register from './pages/Login/Register/Register';
 import SeeMore from './pages/Home/SeeMore/SeeMore';
+import Products from './pages/Home/Products/Products/Products';
 
 
 
@@ -47,16 +47,12 @@ function App() {
               <Products />
             </Route>
 
-            <PrivateRoute exact path="/explores">
-              <Explores />
-            </PrivateRoute>
-
             <Route exact path="/reviews">
               <Reviews />
             </Route>
 
-            <Route exact path="/products">
-              <Products />
+            <Route exact path="/homeExplores">
+              <HomeExplores />
             </Route>
 
             <Route exact path="/seemore">

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './HomeExplore.css';
+import './HomeProduct.css';
 
-const HomeExplore = ({ homeExplore}) => {
-    const {_id, name, img, description, price } = homeExplore;
+const HomeProduct = ({ homeProduct }) => {
+    const {_id, name, img, description, price } = homeProduct;
     
     return (
         <div>
@@ -24,4 +24,4 @@ const HomeExplore = ({ homeExplore}) => {
     );
 };
 
-export default HomeExplore;
+export default HomeProduct;

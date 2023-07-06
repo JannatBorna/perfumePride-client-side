@@ -2,11 +2,11 @@ import React from 'react';
 import Reviews from '../../Dashboard/User/Reviews/Reviews/Reviews';
 import Blogs from '../Blogs/Blogs';
 import Others from '../Others/Others';
-import HomeExplores from '../HomeExplores/HomeExplores/HomeExplores';
 import Banner from './../Banner/Banner';
 import Navigation from '../../Shared/Navigation/Navigation';
 import Footer from '../../Shared/Footer/Footer';
 import Employe from '../Employe/Employe';
+import HomeProducts from '../HomeProducts/HomeProducts/HomeProducts';
 
 
 
@@ -16,7 +16,7 @@ const Home = () => {
       <div>
         <Navigation />
         <Banner />
-        <HomeExplores />
+        <HomeProducts />
         <Employe />
         <Others />
         <Blogs />

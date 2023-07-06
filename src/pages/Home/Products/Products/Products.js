@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import Explore from '../Explore/Explore';
+import Product from '../Product/Product';
 import Navigation from '../../../Shared/Navigation/Navigation';
 import Footer from '../../../Shared/Footer/Footer';
 import { Container } from 'react-bootstrap';
-import './Explores.css';
+import './Products.css';
 
 
-const Explores = () => {
-    const [explores, setExplores] = useState([]);
+const Products = () => {
+    const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('https://perfumepride-server-side.onrender.com/products')
+        fetch('/product.json')
             .then(res => res.json())
-            .then(data => setExplores(data))
+            .then(data => setProducts(data))
     }, [])
 
     return (
@@ -21,9 +21,9 @@ const Explores = () => {
             <Container>
                 <div className="explores-container">
                     {
-                        explores.map(explore => <Explore
-                            explore={explore}
-                        ></Explore>)
+                        products.map(product => <Product
+                            product={product}
+                        ></Product>)
                     }
                 </div>
             </Container>
@@ -32,4 +32,4 @@ const Explores = () => {
     );
 };
 
-export default Explores;
+export default Products;

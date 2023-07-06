@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import HomeExplore from '../HomeExplore/HomeExplore';
-import './HomeExplores.css';
+import HomeProduct from '../HomeProduct/HomeProduct';
+import './HomeProducts.css';
 import { Container } from '@mui/material';
 
 
-const HomeExplores = () => {
+const HomeProducts = () => {
        
-    const [homeExplores, sethomeExplores] = useState([]);
+    const [homeProducts, sethomeProducts] = useState([]);
     const [limit, setLimit] = useState(6);
     
 
     useEffect(() => {
-        fetch('https://perfumepride-server-side.onrender.com/products')
+        fetch('product.json')
         .then(res => res.json())
-        .then(data => sethomeExplores(data))
+        .then(data => sethomeProducts(data))
     } ,[])
 
 
@@ -24,12 +24,12 @@ const HomeExplores = () => {
         </h2>
       <Container>
         <div className="homeExplores-container">
-          {homeExplores.slice(0, limit ? limit : homeExplores.length).map((homeExplore) => (
-            <HomeExplore
-              key={homeExplore.id}
-              homeExplore={homeExplore}
+          {homeProducts.slice(0, limit ? limit : homeProducts.length).map((homeProduct) => (
+            <HomeProduct
+              key={homeProduct.id}
+              homeProduct={homeProduct}
               setLimit={setLimit}
-            ></HomeExplore>
+            ></HomeProduct>
           ))}
         </div>
       </Container>
@@ -37,6 +37,6 @@ const HomeExplores = () => {
     );
 };
 
-export default HomeExplores;  
+export default HomeProducts;  
 
                 

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Explore.css';
+import './Product.css';
 
 
-const Explore = ({ explore }) => {
+const Product = ({ product }) => {
 
-    const { _id, name, img, description, price } = explore;
+    const { _id, name, img, description, price } = product;
     
     return (
         <div className="explore my-5">
@@ -23,4 +23,4 @@ const Explore = ({ explore }) => {
     );
 };
 
-export default Explore;
+export default Product;
