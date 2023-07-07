@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import HomeProduct from '../HomeProduct/HomeProduct';
+import Nav from '../Nav/Nav';
 import './HomeProducts.css';
-import { Container } from '@mui/material';
+import { Container } from 'react-bootstrap';
 
 
 const HomeProducts = () => {
@@ -19,10 +20,10 @@ const HomeProducts = () => {
 
     return (
       <div className='mt-5'>
-        <h2 className="text-center fw-3 text-header">
-          OUR <span className="word-color">P</span>RODUCTS
-        </h2>
-      <Container>
+        <div className='mb-4'>
+          <Nav />
+        </div>
+      <Container fluid>
         <div className="homeExplores-container">
           {homeProducts.slice(0, limit ? limit : homeProducts.length).map((homeProduct) => (
             <HomeProduct
