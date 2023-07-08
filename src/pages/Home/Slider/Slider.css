@@ -1,0 +1,13 @@
+.slider{
+    background-color: #ffffff !important;
+    box-shadow: #00000029 0px 1px 4px;;
+}
+
+.slider img{
+    width: 100%;
+}
+
+.slid-btn{
+    border: none;
+    font-size: 30px;
+}

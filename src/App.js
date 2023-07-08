@@ -10,7 +10,6 @@ import Banner from './pages/Home/Banner/Banner';
 import Booking from './pages/Home/Booking/Booking';
 import Home from './pages/Home/Home/Home';
 import NotFound from './pages/Home/NotFound/NotFound';
-import HomeExplores from './pages/Home/HomeProducts/HomeProducts/HomeProducts';
 import Login from './pages/Login/Login/Login';
 import PrivateRoute from './pages/Login/Login/PrivateRoute/PrivateRoute';
 import Register from './pages/Login/Register/Register';
@@ -49,10 +48,6 @@ function App() {
 
             <Route exact path="/reviews">
               <Reviews />
-            </Route>
-
-            <Route exact path="/homeExplores">
-              <HomeExplores />
             </Route>
 
             <Route exact path="/seemore">

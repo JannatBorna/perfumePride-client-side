@@ -6,7 +6,7 @@ import Banner from './../Banner/Banner';
 import Navigation from '../../Shared/Navigation/Navigation';
 import Footer from '../../Shared/Footer/Footer';
 import Employe from '../Employe/Employe';
-import HomeProducts from '../HomeProducts/HomeProducts/HomeProducts';
+import Slider from '../Slider/Slider';
 
 
 
@@ -16,7 +16,7 @@ const Home = () => {
       <div>
         <Navigation />
         <Banner />
-        <HomeProducts />
+        <Slider />
         <Employe />
         <Others />
         <Blogs />
