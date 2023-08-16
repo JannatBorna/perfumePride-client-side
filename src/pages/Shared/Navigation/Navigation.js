@@ -23,7 +23,7 @@ const Navigation = () => {
                     <Nav className="me-auto my-3">
                         <Nav.Link as={HashLink} to="/home#home" className="header-text">HOME</Nav.Link>
                          <Nav.Link as={HashLink} to="/about#about" className="header-text">ABOUT</Nav.Link>                       
-                        <Nav.Link as={HashLink} to="/products#products" className="header-text">PRODUCTS</Nav.Link>
+                        {/* <Nav.Link as={HashLink} to="/products#products" className="header-text">PRODUCTS</Nav.Link> */}
                         <Nav.Link as={HashLink} to="/products#products" className="header-text">BRANDS</Nav.Link>
                     </Nav>
 

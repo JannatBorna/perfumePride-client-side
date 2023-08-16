@@ -1,0 +1,41 @@
+.men{
+    display: flex;
+    background-color: #8b732b !important;
+    height: 30vh;
+    width: 50%;
+}
+
+.men div{
+    padding: 2em;
+    color: #fff;
+}
+
+.men img{
+    width: 60%;
+    height: 30vh;
+}
+
+.women{
+    display: flex;
+    background-color: #eec6ea !important;
+    height: 30vh;
+    width: 50%;
+}
+
+.women img{
+    width: 60%;
+    height: 30vh;
+}
+
+.women div{
+    padding: 2em;
+    color: #fff;
+}
+
+/* .women div h6{ */
+    /* margin-left: -20px; */
+/* } */
+/*  */
+.women div h2{
+    font-size: 23px;
+}
