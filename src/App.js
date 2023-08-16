@@ -15,6 +15,8 @@ import PrivateRoute from './pages/Login/Login/PrivateRoute/PrivateRoute';
 import Register from './pages/Login/Register/Register';
 import SeeMore from './pages/Home/SeeMore/SeeMore';
 import Products from './pages/Home/Products/Products/Products';
+import Men from "./pages/Home/Collected/MenHouse";
+import Women from "./pages/Home/Collected/WomenHouse";
 
 
 
@@ -71,11 +73,13 @@ function App() {
               <Register />
             </Route>
 
-            <Route exact path="/home">
-              <Home />
+            <Route exact path="/men">
+              <Men />
             </Route>
            
-            
+            <Route exact path="/women">
+              <Women />
+            </Route>
 
             <Route exact path="*">
               <NotFound />

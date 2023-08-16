@@ -9,20 +9,24 @@ const Collected = () => {
         <div className='my-5'>
             <Container> 
                 <div className='d-lg-flex'>
-                    <div className='men mx-4'>
+                    <a href="/men"  className='men mx-4 text-decoration-none'>
+                    {/* <div> */}
                         <div>
                             <h5>FRAGRANCES</h5>
                             <h2>For Men</h2>
                          </div>
                         <img src={men} alt="men_image" />
-                    </div>
-                    <div className='women mx-4'>
+                    {/* </div> */}
+                    </a>
+                    <a href="/women" className='women mx-4 text-decoration-none'>
+                    {/* <div> */}
                         <div>
                             <h5>FRAGRANCES</h5>
                             <h2>For Women</h2>
                         </div>
                         <img src={women} alt="women_image" />
-                    </div>
+                    {/* </div> */}
+                    </a>
                 </div>
             </Container> 
         </div>

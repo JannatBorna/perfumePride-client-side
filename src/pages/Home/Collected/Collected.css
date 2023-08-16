@@ -1,8 +1,12 @@
+a{
+    text-decoration: none;
+}
 .men{
     display: flex;
     background-color: #8b732b !important;
     height: 30vh;
     width: 50%;
+    cursor: pointer;
 }
 
 .men div{
@@ -20,6 +24,7 @@
     background-color: #eec6ea !important;
     height: 30vh;
     width: 50%;
+    cursor: pointer;
 }
 
 .women img{
@@ -29,13 +34,9 @@
 
 .women div{
     padding: 2em;
-    color: #fff;
+    color: #000000;
 }
 
-/* .women div h6{ */
-    /* margin-left: -20px; */
-/* } */
-/*  */
 .women div h2{
     font-size: 23px;
 }
